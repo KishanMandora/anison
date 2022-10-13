@@ -19,12 +19,7 @@ function Home() {
           </button>
         </div>
         <div className="order-1 my-4 p-0 sm:order-2 sm:my-0  md:py-8 md:px-6">
-          <img
-            className="rounded-lg"
-            src="../../public/1061575.jpg"
-            alt=""
-            srcset=""
-          />
+          <img className="rounded-lg" src="./1061575.jpg" alt="" srcset="" />
         </div>
       </section>
     </div>
