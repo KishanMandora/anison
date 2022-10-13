@@ -1,10 +1,10 @@
-import { useState } from "react";
 import "./App.css";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
-    <div className="text-3xl font-bold underline">
-      <h1>Hello Earth!</h1>
+    <div>
+      <Home />
     </div>
   );
 }
