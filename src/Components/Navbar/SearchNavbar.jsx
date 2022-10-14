@@ -1,6 +1,10 @@
+import { EXPLORE, HOME } from "../../constants";
+import { useTempContext } from "../../Context/TempContext";
 import { SearchSvg } from "../Svg/Svg";
 
-function SearchNavbar({ setRoute, route }) {
+function SearchNavbar() {
+  const { route, setRoute } = useTempContext();
+
   const isActive = (path) =>
     path === route ? "rounded-md bg-white px-4 text-black" : "";
 
@@ -8,7 +12,7 @@ function SearchNavbar({ setRoute, route }) {
     <>
       <nav className="flex h-1/10 w-full flex-auto items-center justify-center py-3 px-14 uppercase xxs:justify-between">
         <h1 className="hidden cursor-pointer font-bold tracking-wide lg:text-lg xl:text-xl xs:block">
-          <a href="#" onClick={() => setRoute("home")}>
+          <a href="#" onClick={() => setRoute(HOME)}>
             Anison
           </a>
         </h1>
@@ -25,8 +29,8 @@ function SearchNavbar({ setRoute, route }) {
 
         <div className="hidden items-center text-sm font-medium 2xl:text-base semi-xl:flex">
           <ul className="flex justify-between">
-            <li className={`mr-6 py-2 ${isActive("explore")}`}>
-              <a href="#" onClick={() => setRoute("explore")}>
+            <li className={`mr-6 py-2 ${isActive(EXPLORE)}`}>
+              <a href="#" onClick={() => setRoute(EXPLORE)}>
                 Explore
               </a>
             </li>

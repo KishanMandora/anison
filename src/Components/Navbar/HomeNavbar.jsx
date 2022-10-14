@@ -1,4 +1,9 @@
-function HomeNavbar({ setRoute }) {
+import { EXPLORE } from "../../constants";
+import { useTempContext } from "../../Context/TempContext";
+
+function HomeNavbar() {
+  const { setRoute } = useTempContext();
+
   return (
     <>
       <nav className="flex h-1/10 w-full flex-auto items-center justify-between py-7 px-14 uppercase">
@@ -8,7 +13,7 @@ function HomeNavbar({ setRoute }) {
         <div className="flex items-center text-sm font-medium 2xl:text-base">
           <ul className="hidden justify-between md:flex">
             <li className="mr-6">
-              <a href="#" onClick={() => setRoute("explore")}>
+              <a href="#" onClick={() => setRoute(EXPLORE)}>
                 Explore
               </a>
             </li>

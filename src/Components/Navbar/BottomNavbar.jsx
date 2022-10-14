@@ -1,3 +1,5 @@
+import { EXPLORE, HOME } from "../../constants";
+import { useTempContext } from "../../Context/TempContext";
 import {
   ExploreSvg,
   PlaylistSvg,
@@ -6,14 +8,15 @@ import {
   HomeSvg,
 } from "../Svg/Svg";
 
-function BottomNavbar({ setRoute, route }) {
-  const visbilityFunc = () =>
-    route === "home" ? "md:hidden" : "semi-xl:hidden";
+function BottomNavbar() {
+  const { route, setRoute } = useTempContext();
+
+  const visbilityFunc = () => (route === HOME ? "md:hidden" : "semi-xl:hidden");
 
   const isActive = (path) =>
     path === route ? "rounded-md bg-white text-black" : "";
 
-  const showIcon = () => (route === "home" ? "hidden" : "block");
+  const showIcon = () => (route === HOME ? "hidden" : "block");
 
   return (
     <div
@@ -21,12 +24,12 @@ function BottomNavbar({ setRoute, route }) {
     >
       <ul className="flex justify-evenly">
         <li className={`p-1 sm:p-3  xxs:p-2 xs:hidden ${showIcon()}`}>
-          <a href="#" onClick={() => setRoute("home")}>
+          <a href="#" onClick={() => setRoute(HOME)}>
             <HomeSvg />
           </a>
         </li>
-        <li className={`p-1 sm:p-3  xxs:p-2 ${isActive("explore")}`}>
-          <a href="#" onClick={() => setRoute("explore")}>
+        <li className={`p-1 sm:p-3  xxs:p-2 ${isActive(EXPLORE)}`}>
+          <a href="#" onClick={() => setRoute(EXPLORE)}>
             <ExploreSvg />
           </a>
         </li>

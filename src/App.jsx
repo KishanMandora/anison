@@ -1,15 +1,15 @@
-import { useState } from "react";
 import { Explore } from "./Pages/Explore/Explore";
 import { Home } from "./Pages/Home/Home";
 import "./App.css";
+import { useTempContext } from "./Context/TempContext";
 
 function App() {
-  const [route, setRoute] = useState("home");
+  const { route } = useTempContext();
 
   return (
-    <div>
-      {route === "home" && <Home setRoute={setRoute} route={route} />}
-      {route === "explore" && <Explore setRoute={setRoute} route={route} />}
+    <div className="font-work-sans">
+      {route === "home" && <Home />}
+      {route === "explore" && <Explore />}
     </div>
   );
 }
