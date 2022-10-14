@@ -1,4 +1,4 @@
-function HomeNavbar() {
+function HomeNavbar({ setRoute }) {
   return (
     <>
       <nav className="flex h-1/10 w-full flex-auto items-center justify-between py-7 px-14 uppercase">
@@ -8,7 +8,9 @@ function HomeNavbar() {
         <div className="flex items-center text-sm font-medium 2xl:text-base">
           <ul className="hidden justify-between md:flex">
             <li className="mr-6">
-              <a href="#">Explore</a>
+              <a href="#" onClick={() => setRoute("explore")}>
+                Explore
+              </a>
             </li>
             <li className="mr-6">
               <a href="#">Playlists</a>

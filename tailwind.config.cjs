@@ -9,10 +9,22 @@ module.exports = {
       },
       colors: {
         primary: "#e13c33",
-        secondary: "#0c0c0c",
+        secondary: {
+          "extra-dark": "#0c0c0c",
+          "extra-light": "#2b2b2b",
+          dark: "#161616",
+          light: "#212121",
+        },
       },
       fontFamily: {
         "work-sans": ["Work Sans"],
+      },
+      screens: {
+        xxs: "380px",
+        xs: "520px",
+        "semi-lg": "840px",
+        "semi-xl": "1072px",
+        "3xl": "1600px",
       },
     },
   },
