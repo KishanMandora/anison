@@ -1,4 +1,4 @@
-import { BottomNavbar, HomeNavbar } from "../../Components";
+import { HomeNavbar, BottomNavbar } from "~/Components";
 
 function Home() {
   return (

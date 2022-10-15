@@ -54,4 +54,37 @@ const animeData = [
   },
 ];
 
-export { videosData, animeData };
+const playlistsData = [
+  {
+    id: 1,
+    title: "Watch Later",
+    coverLink: "https://i.ytimg.com/vi/ncBE6aD5JTk/hqdefault.jpg",
+    totalSongs: 3,
+  },
+  {
+    id: 2,
+    title: "Liked Music",
+    coverLink: "https://i.ytimg.com/vi/ZT7GO63dDcc/hqdefault.jpg",
+    totalSongs: 12,
+  },
+  {
+    id: 3,
+    title: "OSTs",
+    coverLink: "https://i.ytimg.com/vi/-Amql5hXG8g/hqdefault.jpg",
+    totalSongs: 7,
+  },
+  {
+    id: 4,
+    title: "Trap Remixes",
+    coverLink: "https://i.ytimg.com/vi/-T8r3zGfQSo/hqdefault.jpg",
+    totalSongs: 5,
+  },
+  {
+    id: 5,
+    title: "Lofi",
+    coverLink: "https://i.ytimg.com/vi/4K_FXp8YAMA/hqdefault.jpg",
+    totalSongs: 1,
+  },
+];
+
+export { videosData, animeData, playlistsData };

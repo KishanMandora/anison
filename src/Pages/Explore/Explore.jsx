@@ -4,7 +4,7 @@ import {
   Dropdown,
   ExploreCard,
   SearchNavbar,
-} from "../../Components";
+} from "~/Components";
 import { videosData as data } from "../../data";
 
 function Explore() {

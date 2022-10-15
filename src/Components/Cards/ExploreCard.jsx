@@ -7,8 +7,8 @@ function ExploreCard({ video }) {
     title.trim().length > 40 ? title.substring(0, 40) + "..." : title + "";
 
   return (
-    <div className="relative rounded-md">
-      <div className="thumbnail">
+    <div className="rounded-md">
+      <div>
         <img src={imageUrl} alt={title} className="rounded" />
       </div>
       <div className="flex justify-between">

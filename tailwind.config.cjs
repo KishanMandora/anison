@@ -14,7 +14,9 @@ module.exports = {
           "extra-light": "#2b2b2b",
           dark: "#161616",
           light: "#212121",
+          transparent: "#0c0c0cb3",
         },
+        error: "#F95D4E",
       },
       fontFamily: {
         "work-sans": ["Work Sans"],

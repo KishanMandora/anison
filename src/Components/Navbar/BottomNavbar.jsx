@@ -1,4 +1,4 @@
-import { EXPLORE, HOME } from "../../constants";
+import { EXPLORE, HOME, PLAYLISTS } from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
 import {
   ExploreSvg,
@@ -33,8 +33,8 @@ function BottomNavbar() {
             <ExploreSvg />
           </a>
         </li>
-        <li className="p-1 sm:p-3  xxs:p-2">
-          <a href="#">
+        <li className={`p-1 sm:p-3  xxs:p-2 ${isActive(PLAYLISTS)}`}>
+          <a href="#" onClick={() => setRoute(PLAYLISTS)}>
             <PlaylistSvg />
           </a>
         </li>
