@@ -1,4 +1,4 @@
-import { EXPLORE, HOME, PLAYLISTS } from "../../constants";
+import { EXPLORE, HOME, PLAYLISTS, SUBSCRIPTIONS } from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
 import { SearchSvg } from "../Svg/Svg";
 
@@ -42,8 +42,10 @@ function SearchNavbar() {
             <li className="mr-6 py-2">
               <a href="#">History</a>
             </li>
-            <li className="mr-6 py-2">
-              <a href="#">Subscriptions</a>
+            <li className={`mr-6 py-2 ${isActive(SUBSCRIPTIONS)}`}>
+              <a href="#" onClick={() => setRoute(SUBSCRIPTIONS)}>
+                Subscriptions
+              </a>
             </li>
           </ul>
         </div>

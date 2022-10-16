@@ -6,5 +6,8 @@
 body {
   background-color: black;
   color: white;
-  /* color: rgba(12, 12, 12, 0.5); */
+}
+
+.grid-container {
+  @apply mb-6 grid w-full gap-6 px-14 py-2 pb-8 xs:grid-cols-2 semi-lg:grid-cols-3 3xl:grid-cols-5;
 }

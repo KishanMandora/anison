@@ -87,4 +87,30 @@ const playlistsData = [
   },
 ];
 
-export { videosData, animeData, playlistsData };
+const subscriptionsData = [
+  {
+    channelId: 1,
+    channelName: "Musicality",
+    channelCoverLink:
+      "https://yt3.ggpht.com/ytc/AMLnZu9xzRSO4VK1iryYU7Q0QBJWngmv3x6cqw2WAdiR4g=s480-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    channelId: 2,
+    channelName: "Trap Music Now",
+    channelCoverLink:
+      "https://yt3.ggpht.com/JXYD1M-TEcycFVqJN7WbR_gwCwlD9BYhcSQ7Bax9pWw6mFKJcBDDFh2EFLguxWDz2qjJAdOiOw=s480-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    channelId: 3,
+    channelName: "Monster Vibes",
+    channelCoverLink:
+      "https://yt3.ggpht.com/E4rcXA1_LlqJRgBhG6jMElezmy8VcXCJvnGuUSMPZcnZEIx2R84Uo9UcUie_gh5ZF_56JoxnjA=s480-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    channelId: 4,
+    channelName: "Shinzu Music",
+    channelCoverLink:
+      "https://yt3.ggpht.com/su845d81gAvBm-WLD0L-CsYSOvdwbXZWs9yKze1TUVRa_A0P1ejiWmoR5YLEF4EFyXqRu2IHaQ=s480-c-k-c0x00ffffff-no-rj-mo",
+  },
+];
+export { videosData, animeData, playlistsData, subscriptionsData };

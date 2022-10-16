@@ -1,4 +1,4 @@
-import { EXPLORE, PLAYLISTS } from "../../constants";
+import { EXPLORE, PLAYLISTS, SUBSCRIPTIONS } from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
 
 function HomeNavbar() {
@@ -23,7 +23,7 @@ function HomeNavbar() {
             <li className="mr-6">
               <a href="#">History</a>
             </li>
-            <li className="mr-6">
+            <li className="mr-6" onClick={() => setRoute(SUBSCRIPTIONS)}>
               <a href="#">Subscriptions</a>
             </li>
           </ul>
