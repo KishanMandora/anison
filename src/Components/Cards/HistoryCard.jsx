@@ -18,7 +18,7 @@ function HistoryCard({ video, showDelete, setShowDelete }) {
 
   return (
     <div
-      className="relative my-6 flex"
+      className="relative mb-6 flex"
       onMouseEnter={() => setShowDelete(id)}
       onMouseLeave={() => setShowDelete(null)}
     >
