@@ -1,6 +1,6 @@
 import { useTempContext } from "./Context/TempContext";
-import { Playlists, Home, Explore, Subscriptions } from "./Pages";
-import { EXPLORE, HOME, PLAYLISTS, SUBSCRIPTIONS } from "./constants";
+import { Playlists, Home, Explore, Subscriptions, History } from "./Pages";
+import { EXPLORE, HISTORY, HOME, PLAYLISTS, SUBSCRIPTIONS } from "./constants";
 import "./App.css";
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
       {route === EXPLORE && <Explore />}
       {route === PLAYLISTS && <Playlists />}
       {route === SUBSCRIPTIONS && <Subscriptions />}
+      {route === HISTORY && <History />}
     </div>
   );
 }

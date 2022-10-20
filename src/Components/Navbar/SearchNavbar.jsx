@@ -1,4 +1,10 @@
-import { EXPLORE, HOME, PLAYLISTS, SUBSCRIPTIONS } from "../../constants";
+import {
+  EXPLORE,
+  HISTORY,
+  HOME,
+  PLAYLISTS,
+  SUBSCRIPTIONS,
+} from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
 import { SearchSvg } from "../Svg/Svg";
 
@@ -20,7 +26,8 @@ function SearchNavbar() {
         <div className="flex">
           <input
             type="text"
-            className="w-40 border-2 border-neutral-600 bg-secondary-extra-light px-2 text-sm text-stone-50 outline-none focus:border-neutral-200 sm:w-72 md:w-80 xl:w-96"
+            placeholder="Search Anime"
+            className="w-40 border-2 border-neutral-600 bg-secondary-extra-light px-2 text-sm font-light text-stone-50 outline-none focus:border-neutral-200 sm:w-72 md:w-80 xl:w-96"
           />
           <button className="bg-secondary-dark px-4 py-2 transition-all active:scale-90 ">
             <SearchSvg />
@@ -39,8 +46,10 @@ function SearchNavbar() {
                 Playlists
               </a>
             </li>
-            <li className="mr-6 py-2">
-              <a href="#">History</a>
+            <li className={`mr-6 py-2 ${isActive(HISTORY)}`}>
+              <a href="#" onClick={() => setRoute(HISTORY)}>
+                History
+              </a>
             </li>
             <li className={`mr-6 py-2 ${isActive(SUBSCRIPTIONS)}`}>
               <a href="#" onClick={() => setRoute(SUBSCRIPTIONS)}>

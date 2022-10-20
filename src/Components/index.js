@@ -5,6 +5,7 @@ export { Dropdown } from "./Dropdown/Dropdown";
 export { ExploreCard } from "./Cards/ExploreCard";
 export { PlaylistCard } from "./Cards/PlaylistCard";
 export { SubscriptionCard } from "./Cards/SubscriptionCard";
+export { HistoryCard } from "./Cards/HistoryCard";
 export {
   HistorySvg,
   ExploreSvg,

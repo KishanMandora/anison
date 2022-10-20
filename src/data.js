@@ -113,4 +113,51 @@ const subscriptionsData = [
       "https://yt3.ggpht.com/su845d81gAvBm-WLD0L-CsYSOvdwbXZWs9yKze1TUVRa_A0P1ejiWmoR5YLEF4EFyXqRu2IHaQ=s480-c-k-c0x00ffffff-no-rj-mo",
   },
 ];
-export { videosData, animeData, playlistsData, subscriptionsData };
+
+const historyData = [
+  {
+    id: "g3jCAyPai2Y",
+    title: "Yakuza OST - Baka Mitai (ばかみたい) Kiryu full version",
+    channelName: "Senshi Ongaku",
+    medium: "https://i.ytimg.com/vi/g3jCAyPai2Y/mqdefault.jpg",
+    views: "4.46M",
+    description:
+      "Yakuza (Ryu ga Gotoku) 0, 5 and Kiwami karaoke, originally sang by Kiryu. Cover version by Senshi Ongaku. Composition © Sega / Ryu ga Gotoku Studio Audio © Senshi Ongaku",
+  },
+  {
+    id: "6u5GK11Yt7Q",
+    title: "Tokyo Revengers Opening (Full) -Cry Baby- Lyrics",
+    channelName: "ZEN",
+    medium: "https://i.ytimg.com/vi/6u5GK11Yt7Q/mqdefault.jpg",
+    views: "3.78M",
+    description:
+      "Anime : Tokyo Revengers Song : Cry Baby by Official HIGE DANdism",
+  },
+  {
+    id: "qal34e9v_pk",
+    title: `Suzume no Tojimari - Theme Song "Suzume" (Official Version)`,
+    channelName: "AniMelody – Anime Music",
+    medium: "https://i.ytimg.com/vi/qal34e9v_pk/mqdefault.jpg",
+    views: "798K",
+    description: `Suzume no Tojimari OST / Title Track "Suzume" by RADWIMPS ft. toaka Anime Film "Suzume's Door-Locking" OST / Main Theme (Official ver.)
+RADWIMPS feat. toaka - Suzume`,
+  },
+  {
+    id: "YaQbkhdYL_s",
+    title: "Naruto Shippuden - Departure to the Front Lines (LSB Remix)",
+    channelName: "Shinzu Music",
+    medium: "https://i.ytimg.com/vi/YaQbkhdYL_s/mqdefault.jpg",
+    views: "38K",
+    description: `Naruto Shippuden - Departure to the Front Lines (LSB Remix)
+This is a reupload. Last one got blocked in all countries. I hope it'll stay up this time! 😅`,
+  },
+  {
+    id: "BpcOxoqleAU",
+    title: "Ultra Instinct OST - EPIC VERSION [身勝手の極意]",
+    channelName: "Dragon Ball Epic",
+    medium: "https://i.ytimg.com/vi/BpcOxoqleAU/mqdefault.jpg",
+    views: "15M",
+    description: `Welcome to another EPIC OST MIX video; it's time to get Ultra Instinct again & surpass every limit, in this blood-pumping EPIC VERSION [身勝手の極意]. Feat. Aviand & Unkos Channel.`,
+  },
+];
+export { videosData, animeData, playlistsData, subscriptionsData, historyData };

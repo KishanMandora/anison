@@ -7,7 +7,7 @@ function Subscriptions() {
       <SearchNavbar />
       <section className="grid-container">
         {data.map((channel) => {
-          return <SubscriptionCard key={channel.id} channel={channel} />;
+          return <SubscriptionCard key={channel.channelId} channel={channel} />;
         })}
       </section>
       <BottomNavbar />

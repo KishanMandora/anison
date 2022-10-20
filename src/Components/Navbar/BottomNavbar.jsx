@@ -1,4 +1,10 @@
-import { EXPLORE, HOME, PLAYLISTS, SUBSCRIPTIONS } from "../../constants";
+import {
+  EXPLORE,
+  HISTORY,
+  HOME,
+  PLAYLISTS,
+  SUBSCRIPTIONS,
+} from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
 import {
   ExploreSvg,
@@ -38,8 +44,8 @@ function BottomNavbar() {
             <PlaylistSvg />
           </a>
         </li>
-        <li className="p-1 sm:p-3  xxs:p-2">
-          <a href="#">
+        <li className={`p-1 sm:p-3  xxs:p-2 ${isActive(HISTORY)}`}>
+          <a href="#" onClick={() => setRoute(HISTORY)}>
             <HistorySvg />
           </a>
         </li>

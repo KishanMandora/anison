@@ -13,7 +13,7 @@ function PlaylistCard({ playlist }) {
           <span> {totalSongs} </span>
           <PlaylistSvg />
         </div>
-        <button className="absolute bottom-1 right-1 rounded-md bg-error p-2 transition-all hover:scale-105 active:scale-90">
+        <button className="delete bottom">
           <DeleteSvg />
         </button>
       </div>
