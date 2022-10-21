@@ -6,6 +6,10 @@ export { ExploreCard } from "./Cards/ExploreCard";
 export { PlaylistCard } from "./Cards/PlaylistCard";
 export { SubscriptionCard } from "./Cards/SubscriptionCard";
 export { HistoryCard } from "./Cards/HistoryCard";
+export { VideoCard } from "./Cards/VideoCard";
+export { SuggestionCard } from "./Cards/SuggestionCard";
+export { DescriptionCard } from "./Cards/DescriptionCard";
+export { CommentsCard } from "./Cards/CommentsCard";
 export {
   HistorySvg,
   ExploreSvg,
@@ -15,4 +19,11 @@ export {
   HomeSvg,
   DotsSvg,
   DeleteSvg,
+  LikeSvg,
+  DislikeSvg,
+  ShareSvg,
+  SaveToPlaylist,
+  ExpandCommentsSvg,
+  DescriptionSvg,
+  CloseSvg,
 } from "./Svg/Svg";
