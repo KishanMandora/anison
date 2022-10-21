@@ -3,10 +3,11 @@ const EXPLORE = "explore";
 const PLAYLISTS = "playlists";
 const SUBSCRIPTIONS = "subscriptions";
 const HISTORY = "history";
-const WATCH = "watch";
 const SUGGESTIONS = "suggestions";
 const COMMENTS = "comments";
 const DESCRIPTION = "description";
+const SINGLEVIDEO = "singlevideo";
+const SINGLEPLAYLIST = "singleplaylist";
 
 export {
   HOME,
@@ -14,8 +15,9 @@ export {
   PLAYLISTS,
   SUBSCRIPTIONS,
   HISTORY,
-  WATCH,
   SUGGESTIONS,
   DESCRIPTION,
   COMMENTS,
+  SINGLEPLAYLIST,
+  SINGLEVIDEO,
 };

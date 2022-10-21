@@ -12,32 +12,30 @@ import {
   HISTORY,
   HOME,
   PLAYLISTS,
+  SINGLEPLAYLIST,
+  SINGLEVIDEO,
   SUBSCRIPTIONS,
-  WATCH,
 } from "./constants";
 import "./App.css";
 import { useEffect, useState } from "react";
 
 function App() {
   const { route } = useTempContext();
-  const [currentVideo, setCurrentVideo] = useState(null);
+  const [currentList, setCurrentList] = useState([]);
 
-  useEffect(() => {
-    if (route !== WATCH) {
-      setCurrentVideo(null);
-    }
-  }, [route]);
-
-  console.log(currentVideo, "current video");
+  console.log(currentList, "current List");
 
   return (
     <div className="font-work-sans">
       {route === HOME && <Home />}
-      {route === EXPLORE && <Explore setCurrentVideo={setCurrentVideo} />}
-      {route === PLAYLISTS && <Playlists />}
+      {route === EXPLORE && <Explore setCurrentList={setCurrentList} />}
+      {route === PLAYLISTS && (
+        <Playlists setCurrentPlaylist={setCurrentPlaylist} />
+      )}
       {route === SUBSCRIPTIONS && <Subscriptions />}
       {route === HISTORY && <History />}
-      {route === WATCH && <Watch currentVideo={currentVideo} />}
+      {route === SINGLEVIDEO && <Watch currentList={currentList} />}
+      {/* {route === SINGLEPLAYLIST && <Watch currentList={currentPlayList[0]} />} */}
     </div>
   );
 }

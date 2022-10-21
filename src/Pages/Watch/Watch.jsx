@@ -11,8 +11,9 @@ import {
 import { COMMENTS, DESCRIPTION, SUGGESTIONS } from "~/constants";
 import { suggestionsData as data } from "~/data";
 
-function Watch({ currentVideo }) {
+function Watch({ currentList }) {
   const [infoState, setInfoState] = useState(SUGGESTIONS);
+  const currentVideo = currentList[0];
   const { comments } = currentVideo;
 
   return (

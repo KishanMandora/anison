@@ -1,12 +1,10 @@
-import { WATCH } from "~/constants";
+import { SINGLEVIDEO } from "~/constants";
 import { useTempContext } from "~/Context/TempContext";
 import { DotsSvg } from "../Svg/Svg";
 
-function ExploreCard({ video, setCurrentVideo }) {
+function ExploreCard({ video, setCurrentList }) {
   const { setRoute } = useTempContext();
   const { imageUrl, duration, title } = video;
-
-  console.log("video from card", video);
 
   const displayTitle =
     title.trim().length > 40 ? title.substring(0, 40) + "..." : title + "";
@@ -15,8 +13,8 @@ function ExploreCard({ video, setCurrentVideo }) {
     <div
       className="rounded-md"
       onClick={() => {
-        setRoute(WATCH);
-        setCurrentVideo(video);
+        setRoute(SINGLEVIDEO);
+        setCurrentList((prev) => [video]);
       }}
     >
       <div>

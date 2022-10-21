@@ -7,9 +7,7 @@ import {
 } from "~/Components";
 import { videosData as data } from "../../data";
 
-console.log("videos", data);
-
-function Explore({ setCurrentVideo }) {
+function Explore({ setCurrentList }) {
   return (
     <div className="min-h-screen">
       <SearchNavbar />
@@ -20,7 +18,7 @@ function Explore({ setCurrentVideo }) {
             <ExploreCard
               key={video.id}
               video={video}
-              setCurrentVideo={setCurrentVideo}
+              setCurrentList={setCurrentList}
             />
           );
         })}
