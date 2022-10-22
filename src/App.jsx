@@ -17,25 +17,32 @@ import {
   SUBSCRIPTIONS,
 } from "./constants";
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 function App() {
   const { route } = useTempContext();
   const [currentList, setCurrentList] = useState([]);
 
+  useLayoutEffect(() => {
+    if (route !== SINGLEVIDEO && route !== SINGLEPLAYLIST) {
+      setCurrentList([]);
+    }
+
+    return () => {};
+  }, [route]);
+
+  console.log(route, "route");
   console.log(currentList, "current List");
 
   return (
     <div className="font-work-sans">
       {route === HOME && <Home />}
       {route === EXPLORE && <Explore setCurrentList={setCurrentList} />}
-      {route === PLAYLISTS && (
-        <Playlists setCurrentPlaylist={setCurrentPlaylist} />
-      )}
+      {route === PLAYLISTS && <Playlists setCurrentList={setCurrentList} />}
       {route === SUBSCRIPTIONS && <Subscriptions />}
       {route === HISTORY && <History />}
       {route === SINGLEVIDEO && <Watch currentList={currentList} />}
-      {/* {route === SINGLEPLAYLIST && <Watch currentList={currentPlayList[0]} />} */}
+      {route === SINGLEPLAYLIST && <Watch currentList={currentList} />}
     </div>
   );
 }

@@ -10,6 +10,7 @@ export { VideoCard } from "./Cards/VideoCard";
 export { SuggestionCard } from "./Cards/SuggestionCard";
 export { DescriptionCard } from "./Cards/DescriptionCard";
 export { CommentsCard } from "./Cards/CommentsCard";
+export { QueueCard } from "./Cards/QueueCard";
 export {
   HistorySvg,
   ExploreSvg,

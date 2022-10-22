@@ -1,10 +1,20 @@
+import { useTempContext } from "~/Context/TempContext";
 import { DeleteSvg, PlaylistSvg } from "../Svg/Svg";
+import { SINGLEPLAYLIST } from "~/constants";
+import { singlePlayListData } from "~/data";
 
-function PlaylistCard({ playlist }) {
+function PlaylistCard({ playlist, setCurrentList }) {
+  const { setRoute } = useTempContext();
   const { title, coverLink, totalSongs } = playlist;
 
   return (
-    <div className="rounded-md">
+    <div
+      className="rounded-md"
+      onClick={() => {
+        setCurrentList(singlePlayListData);
+        setRoute(SINGLEPLAYLIST);
+      }}
+    >
       <div className="relative">
         <div>
           <img src={coverLink} alt={title} className="rounded" />

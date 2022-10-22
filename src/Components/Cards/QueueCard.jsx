@@ -1,5 +1,7 @@
-function SuggestionCard({ suggestion }) {
-  const { title, imageUrl, channelName, views, mediumImage } = suggestion;
+import { DeleteSvg } from "../Svg/Svg";
+
+function QueueCard({ video, currentList }) {
+  const { title, channelName, imageUrl, mediumImage } = video;
 
   const displayTitle =
     title.length > 60 ? title.substring(0, 60) + "..." : title;
@@ -7,8 +9,13 @@ function SuggestionCard({ suggestion }) {
   const mobileDisplayTitle =
     title.length > 35 ? title.substring(0, 35) + "..." : title;
 
+  const isCurrentSong =
+    currentList[0].id === video.id ? "bg-zinc-700" : "bg-secondary-light";
+
   return (
-    <div className="my-2 grid w-full grid-cols-3 gap-3 bg-secondary-light p-3">
+    <div
+      className={`relative my-2 grid w-full grid-cols-3 gap-3 p-3 ${isCurrentSong}`}
+    >
       <div>
         <img
           className=" hidden h-full semi-xl:block"
@@ -25,11 +32,12 @@ function SuggestionCard({ suggestion }) {
         <h3 className="hidden text-sm xs:block"> {displayTitle} </h3>
         <h3 className="block text-sm xs:hidden"> {mobileDisplayTitle} </h3>
         <span className="text-xs"> {channelName} </span>
-        <br />
-        <span className="text-xs"> {views} </span>
       </div>
+      <button className="delete absolute right-1 bottom-1">
+        <DeleteSvg />
+      </button>
     </div>
   );
 }
 
-export { SuggestionCard };
+export { QueueCard };
