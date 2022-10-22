@@ -1,4 +1,4 @@
-import { animeData as data } from "../../data";
+import { animeData as data } from "~/data";
 
 function Dropdown() {
   return (

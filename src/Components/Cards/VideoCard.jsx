@@ -2,8 +2,8 @@ import {
   COMMENTS,
   DESCRIPTION,
   SINGLEPLAYLIST,
-  SINGLEVIDEO,
   SUGGESTIONS,
+  PLAYLISTQUEUE,
 } from "~/constants";
 import { useTempContext } from "~/Context/TempContext";
 import {
@@ -66,39 +66,39 @@ function VideoCard({ setInfoState, infoState, currentVideo }) {
             <span className="text-xs"> Save </span>
           </div>
         </div>
-        {route === SINGLEVIDEO && (
-          <div className="mt-2 grid grid-cols-2 border-y py-2">
-            <div
-              className={`flex flex-col items-center border-r px-4 xxs:flex-row xxs:justify-between ${isActive(
-                DESCRIPTION
-              )}`}
-              onClick={() =>
-                infoState === DESCRIPTION
-                  ? setInfoState(SUGGESTIONS)
-                  : setInfoState(DESCRIPTION)
-              }
-            >
-              <span className="text-sm sm:text-base">Description </span>
-              <DescriptionSvg />
-            </div>
-            <div
-              className={`flex flex-col items-center px-4 xxs:flex-row xxs:justify-between ${isActive(
-                COMMENTS
-              )}`}
-              onClick={() =>
-                infoState === COMMENTS
-                  ? setInfoState(SUGGESTIONS)
-                  : setInfoState(COMMENTS)
-              }
-            >
-              <span className="text-sm sm:text-base"> Comments </span>
-              <ExpandCommentsSvg />
-            </div>
+
+        <div className="mt-2 grid grid-cols-2 border-y py-2">
+          <div
+            className={`flex flex-col items-center border-r px-4 xxs:flex-row xxs:justify-between ${isActive(
+              DESCRIPTION
+            )}`}
+            onClick={() =>
+              infoState === DESCRIPTION
+                ? setInfoState(
+                    route === SINGLEPLAYLIST ? PLAYLISTQUEUE : SUGGESTIONS
+                  )
+                : setInfoState(DESCRIPTION)
+            }
+          >
+            <span className="text-sm sm:text-base">Description </span>
+            <DescriptionSvg />
           </div>
-        )}
-        {route === SINGLEPLAYLIST && (
-          <div className="mt-2 grid h-10 grid-cols-2 border-y bg-emerald-500 py-2"></div>
-        )}
+          <div
+            className={`flex flex-col items-center px-4 xxs:flex-row xxs:justify-between ${isActive(
+              COMMENTS
+            )}`}
+            onClick={() =>
+              infoState === COMMENTS
+                ? setInfoState(
+                    route === SINGLEPLAYLIST ? PLAYLISTQUEUE : SUGGESTIONS
+                  )
+                : setInfoState(COMMENTS)
+            }
+          >
+            <span className="text-sm sm:text-base"> Comments </span>
+            <ExpandCommentsSvg />
+          </div>
+        </div>
       </div>
     </div>
   );

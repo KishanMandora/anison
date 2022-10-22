@@ -12,6 +12,7 @@ import {
 import {
   COMMENTS,
   DESCRIPTION,
+  PLAYLISTQUEUE,
   SINGLEPLAYLIST,
   SINGLEVIDEO,
   SUGGESTIONS,
@@ -21,7 +22,9 @@ import { suggestionsData as data } from "~/data";
 
 function Watch({ currentList }) {
   const { route } = useTempContext();
-  const [infoState, setInfoState] = useState(SUGGESTIONS);
+  const [infoState, setInfoState] = useState(() =>
+    route === SINGLEPLAYLIST ? PLAYLISTQUEUE : SUGGESTIONS
+  );
   const currentVideo = currentList[0] ?? {};
   const { comments } = currentVideo;
 
@@ -35,45 +38,17 @@ function Watch({ currentList }) {
           currentVideo={currentVideo}
         />
 
-        {route === SINGLEVIDEO && (
-          <div className="no-scrollbar w-full overflow-auto bg-secondary-extra-dark semi-xl:sticky semi-xl:top-1/10 semi-xl:h-9/10">
-            {infoState === SUGGESTIONS && (
-              <div>
-                <h3 className="py-2 text-center text-lg"> Suggestions </h3>
-                {data.map((suggestion) => (
-                  <SuggestionCard key={suggestion.id} suggestion={suggestion} />
-                ))}
-              </div>
-            )}
-            {infoState === DESCRIPTION && (
-              <div>
-                <h3 className="py-2 text-center text-lg"> Description </h3>
-                <span
-                  className="absolute top-1 right-1 hidden cursor-pointer rounded-full bg-secondary-light p-2 semi-xl:block"
-                  onClick={() => setInfoState(SUGGESTIONS)}
-                >
-                  <CloseSvg />
-                </span>
-                <DescriptionCard currentVideo={currentVideo} />
-              </div>
-            )}
-            {infoState === COMMENTS && (
-              <div>
-                <h3 className="py-2 text-center text-lg"> Comments </h3>
-                <span
-                  className="absolute top-1 right-1 hidden cursor-pointer rounded-full bg-secondary-light p-2 semi-xl:block"
-                  onClick={() => setInfoState(SUGGESTIONS)}
-                >
-                  <CloseSvg />
-                </span>
-                <CommentsCard comments={comments} />
-              </div>
-            )}
-          </div>
-        )}
+        <div className="no-scrollbar w-full overflow-auto bg-secondary-extra-dark semi-xl:sticky semi-xl:top-1/10 semi-xl:h-9/10">
+          {route === SINGLEVIDEO && infoState === SUGGESTIONS && (
+            <div>
+              <h3 className="py-2 text-center text-lg"> Suggestions </h3>
+              {data.map((suggestion) => (
+                <SuggestionCard key={suggestion.id} suggestion={suggestion} />
+              ))}
+            </div>
+          )}
 
-        {route === SINGLEPLAYLIST && (
-          <div className="no-scrollbar w-full overflow-auto bg-secondary-extra-dark  semi-xl:sticky semi-xl:top-1/10 semi-xl:h-9/10">
+          {route === SINGLEPLAYLIST && infoState === PLAYLISTQUEUE && (
             <div>
               <h3 className="py-2 text-center text-lg">From Playlist</h3>
               {currentList.map((video) => (
@@ -84,8 +59,41 @@ function Watch({ currentList }) {
                 />
               ))}
             </div>
-          </div>
-        )}
+          )}
+
+          {infoState === DESCRIPTION && (
+            <div>
+              <h3 className="py-2 text-center text-lg"> Description </h3>
+              <span
+                className="absolute top-1 right-1 hidden cursor-pointer rounded-full bg-secondary-light p-2 semi-xl:block"
+                onClick={() =>
+                  setInfoState(
+                    route === SINGLEPLAYLIST ? PLAYLISTQUEUE : SUGGESTIONS
+                  )
+                }
+              >
+                <CloseSvg />
+              </span>
+              <DescriptionCard currentVideo={currentVideo} />
+            </div>
+          )}
+          {infoState === COMMENTS && (
+            <div>
+              <h3 className="py-2 text-center text-lg"> Comments </h3>
+              <span
+                className="absolute top-1 right-1 hidden cursor-pointer rounded-full bg-secondary-light p-2 semi-xl:block"
+                onClick={() =>
+                  setInfoState(
+                    route === SINGLEPLAYLIST ? PLAYLISTQUEUE : SUGGESTIONS
+                  )
+                }
+              >
+                <CloseSvg />
+              </span>
+              <CommentsCard comments={comments} />
+            </div>
+          )}
+        </div>
       </section>
       <BottomNavbar />
     </div>
