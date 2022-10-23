@@ -6,7 +6,7 @@ function Form() {
   const { setRoute, route } = useTempContext();
 
   return (
-    <div className="flex w-full items-center justify-center px-14">
+    <div className="mx-auto flex w-9/10 items-center justify-center ">
       <div className="mb-12 w-full rounded-md bg-secondary-dark p-6 sm:w-96 2xl:w-120">
         <form className="flex flex-col gap-4">
           {route === SIGNUP && (

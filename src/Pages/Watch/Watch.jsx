@@ -31,7 +31,7 @@ function Watch({ currentList }) {
   return (
     <div className="relative">
       <SearchNavbar />
-      <section className="mt-20 mb-10 grid min-h-screen w-full grid-cols-1 gap-6 px-14 py-2 pb-8 semi-xl:h-screen semi-xl:grid-cols-3">
+      <section className="mx-auto mt-2 mb-10 grid min-h-screen w-9/10 grid-cols-1 gap-6  py-2 pb-8 semi-xl:h-screen semi-xl:grid-cols-3">
         <VideoCard
           setInfoState={setInfoState}
           infoState={infoState}

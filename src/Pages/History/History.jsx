@@ -13,7 +13,7 @@ function History() {
   return (
     <div>
       <SearchNavbar />
-      <section className="grid-container relative mt-20 xxs:grid-cols-2 semi-xl:grid-cols-5">
+      <section className="grid-container relative mt-4 xxs:grid-cols-2 semi-xl:grid-cols-5">
         <div className="col-span-2 semi-xl:col-span-3">
           {data.map((video) => {
             return (

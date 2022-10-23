@@ -13,7 +13,7 @@ function HomeNavbar() {
 
   return (
     <>
-      <nav className="flex h-1/10 w-full flex-auto items-center justify-between py-7 px-14 uppercase">
+      <nav className="sticky top-0 mx-auto flex h-16 w-9/10 flex-auto items-center justify-between bg-black py-7 uppercase">
         <h1 className="cursor-pointer font-bold tracking-wide lg:text-lg xl:text-xl">
           Anison
         </h1>

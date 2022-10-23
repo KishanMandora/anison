@@ -8,7 +8,7 @@ function Account() {
   return (
     <div>
       <SearchNavbar />
-      <div className="mt-24 flex w-full flex-col items-center justify-center p-4 px-14">
+      <div className="mx-auto mt-24 flex w-9/10 flex-col items-center justify-center p-4">
         <div className="flex flex-col items-center justify-center xs:flex-row">
           <img
             className="inline-block h-20 w-20 rounded-full ring-neutral-300 hover:ring-2"

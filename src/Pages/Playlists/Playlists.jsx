@@ -5,7 +5,7 @@ function Playlists({ setCurrentList }) {
   return (
     <div>
       <SearchNavbar />
-      <section className="grid-container mt-20">
+      <section className="grid-container mt-2">
         {data.map((playlist) => {
           return (
             <PlaylistCard

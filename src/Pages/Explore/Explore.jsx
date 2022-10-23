@@ -12,7 +12,7 @@ function Explore({ setCurrentList }) {
     <div className="min-h-screen">
       <SearchNavbar />
       <Dropdown />
-      <section className="grid-container mt-24">
+      <section className="grid-container">
         {data.map((video) => {
           return (
             <ExploreCard

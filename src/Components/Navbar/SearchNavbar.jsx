@@ -16,13 +16,13 @@ function SearchNavbar() {
     path === route ? "rounded-md bg-white px-4 text-black" : "";
 
   return (
-    <nav className="fixed top-0 z-10 flex min-h-1/10 w-full items-center justify-between bg-black  py-3 px-14 uppercase">
+    <nav className="sticky top-[-1px] z-10 mx-auto flex h-16 w-9/10 items-center  justify-between bg-black py-3  uppercase">
       <h1 className="hidden cursor-pointer font-bold tracking-wide lg:text-lg xl:text-xl xs:block">
         <a href="#" onClick={() => setRoute(HOME)}>
           Anison
         </a>
       </h1>
-      <div className="flex">
+      <div className="flex w-full xxs:w-fit">
         <input
           type="text"
           placeholder="Search Anime"
