@@ -4,6 +4,7 @@ import {
   HOME,
   PLAYLISTS,
   SUBSCRIPTIONS,
+  ACCOUNT,
 } from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
 import { SearchSvg } from "../Svg/Svg";
@@ -21,7 +22,6 @@ function SearchNavbar() {
           Anison
         </a>
       </h1>
-
       <div className="flex">
         <input
           type="text"
@@ -32,7 +32,6 @@ function SearchNavbar() {
           <SearchSvg />
         </button>
       </div>
-
       <div className="hidden items-center text-sm font-medium 2xl:text-base semi-xl:flex">
         <ul className="flex justify-between">
           <li className={`mr-6 py-2 ${isActive(EXPLORE)}`}>
@@ -57,7 +56,10 @@ function SearchNavbar() {
           </li>
         </ul>
       </div>
-      <div className="hidden cursor-pointer xxs:block">
+      <div
+        className="hidden cursor-pointer xxs:block"
+        onClick={() => setRoute(ACCOUNT)}
+      >
         <img
           className="inline-block h-8 w-8 rounded-full ring-neutral-300 hover:ring-2"
           src="https://lh3.googleusercontent.com/a/ALm5wu19yixxc9hwFSrQMhCLNsoieRlH-g5bNi7x-LuizA=s288-p-rw-no"

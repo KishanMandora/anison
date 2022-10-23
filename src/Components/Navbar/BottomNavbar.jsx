@@ -4,6 +4,7 @@ import {
   HOME,
   PLAYLISTS,
   SUBSCRIPTIONS,
+  ACCOUNT,
 } from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
 import {
@@ -54,7 +55,10 @@ function BottomNavbar() {
             <SubscriptionsSvg />
           </a>
         </li>
-        <li className={`block p-1 sm:p-3 xxs:hidden xxs:p-2 ${showIcon()}`}>
+        <li
+          className={`block p-1 sm:p-3 xxs:hidden xxs:p-2 ${showIcon()}`}
+          onClick={() => setRoute(ACCOUNT)}
+        >
           <a href="#">
             <img
               className="inline-block h-6 w-6 rounded-full ring-neutral-300 hover:ring-1"

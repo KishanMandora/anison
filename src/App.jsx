@@ -6,8 +6,10 @@ import {
   Subscriptions,
   History,
   Watch,
+  Account,
 } from "./Pages";
 import {
+  ACCOUNT,
   EXPLORE,
   HISTORY,
   HOME,
@@ -43,6 +45,7 @@ function App() {
       {route === HISTORY && <History />}
       {route === SINGLEVIDEO && <Watch currentList={currentList} />}
       {route === SINGLEPLAYLIST && <Watch currentList={currentList} />}
+      {route === ACCOUNT && <Account />}
     </div>
   );
 }

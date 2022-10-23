@@ -1,5 +1,12 @@
-import { EXPLORE, HISTORY, PLAYLISTS, SUBSCRIPTIONS } from "../../constants";
+import {
+  ACCOUNT,
+  EXPLORE,
+  HISTORY,
+  PLAYLISTS,
+  SUBSCRIPTIONS,
+} from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
+import { AccountSvg } from "../Svg/Svg";
 
 function HomeNavbar() {
   const { setRoute } = useTempContext();
@@ -28,12 +35,18 @@ function HomeNavbar() {
             </li>
           </ul>
 
-          <div className="ml-6 cursor-pointer">
+          <div
+            className="ml-6 cursor-pointer"
+            onClick={() => setRoute(ACCOUNT)}
+          >
             <img
               className="inline-block h-8 w-8 rounded-full ring-neutral-300 hover:ring-2"
               src="https://lh3.googleusercontent.com/a/ALm5wu19yixxc9hwFSrQMhCLNsoieRlH-g5bNi7x-LuizA=s288-p-rw-no"
               alt="kishan mandora"
             />
+            {/* <div className="rounded-full border-2 p-1">
+              <AccountSvg />
+            </div> */}
           </div>
         </div>
       </nav>

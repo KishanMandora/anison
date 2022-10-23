@@ -27,4 +27,5 @@ export {
   ExpandCommentsSvg,
   DescriptionSvg,
   CloseSvg,
+  AccountSvg,
 } from "./Svg/Svg";
