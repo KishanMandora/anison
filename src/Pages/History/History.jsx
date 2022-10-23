@@ -31,7 +31,7 @@ function History() {
             <input
               type="text"
               placeholder="Search Watch History"
-              className="w-full border-2 border-x-0 border-t-0 border-neutral-600 bg-secondary-extra-light p-4 text-sm font-light text-stone-50 outline-none focus:border-neutral-200"
+              className="input p-4"
             />
             <button className="bg-secondary-extra-light p-4">
               <SearchSvg />

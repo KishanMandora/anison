@@ -1,7 +1,10 @@
 import React from "react";
-import { BottomNavbar, HomeNavbar, SearchNavbar } from "~/Components";
+import { BottomNavbar, SearchNavbar } from "~/Components";
+import { SIGNIN } from "~/constants";
+import { useTempContext } from "~/Context/TempContext";
 
 function Account() {
+  const { setRoute } = useTempContext();
   return (
     <div>
       <SearchNavbar />
@@ -23,7 +26,9 @@ function Account() {
           <button className="rounded-md bg-secondary-light p-2 transition-transform hover:scale-105 active:scale-90">
             Edit
           </button>
-          <button className="delete"> Sign out </button>
+          <button className="delete" onClick={() => setRoute(SIGNIN)}>
+            Sign out
+          </button>
         </div>
       </div>
 

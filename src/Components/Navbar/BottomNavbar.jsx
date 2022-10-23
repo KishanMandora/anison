@@ -5,6 +5,8 @@ import {
   PLAYLISTS,
   SUBSCRIPTIONS,
   ACCOUNT,
+  SIGNIN,
+  SIGNUP,
 } from "../../constants";
 import { useTempContext } from "../../Context/TempContext";
 import {
@@ -18,7 +20,10 @@ import {
 function BottomNavbar() {
   const { route, setRoute } = useTempContext();
 
-  const visbilityFunc = () => (route === HOME ? "md:hidden" : "semi-xl:hidden");
+  const visbilityFunc = () =>
+    route === HOME || route === SIGNIN || route === SIGNUP
+      ? "md:hidden"
+      : "semi-xl:hidden";
 
   const isActive = (path) =>
     path === route ? "rounded-md bg-white text-black" : "";

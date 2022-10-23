@@ -24,6 +24,10 @@ body {
   display: none;
 }
 
+.input {
+  @apply w-full border-2 border-x-0 border-t-0 border-neutral-600 bg-secondary-extra-light text-sm font-light text-stone-50 outline-none focus:border-neutral-200;
+}
+
 /* Hide scrollbar for IE, Edge and Firefox */
 .no-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */

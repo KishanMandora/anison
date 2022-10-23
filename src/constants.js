@@ -10,6 +10,8 @@ const SINGLEVIDEO = "singlevideo";
 const SINGLEPLAYLIST = "singleplaylist";
 const PLAYLISTQUEUE = "playlistqueue";
 const ACCOUNT = "account";
+const SIGNIN = "signin";
+const SIGNUP = "signup";
 
 export {
   HOME,
@@ -24,4 +26,6 @@ export {
   SINGLEVIDEO,
   PLAYLISTQUEUE,
   ACCOUNT,
+  SIGNIN,
+  SIGNUP,
 };

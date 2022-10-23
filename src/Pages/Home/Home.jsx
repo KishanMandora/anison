@@ -3,7 +3,6 @@ import { HomeNavbar, BottomNavbar } from "~/Components";
 function Home() {
   return (
     <div className="relative min-h-screen md:h-screen">
-      <BottomNavbar />
       <HomeNavbar />
       <section className="grid h-9/10 w-full items-center gap-6 px-14 sm:grid-cols-2">
         <div className="order-2 mb-16 mt-8 flex  flex-col gap-4  sm:order-1 sm:my-0 md:gap-8">
@@ -21,6 +20,7 @@ function Home() {
           <img className="rounded-lg" src="./1061575.jpg" alt="" srcSet="" />
         </div>
       </section>
+      <BottomNavbar />
     </div>
   );
 }
