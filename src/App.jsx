@@ -36,9 +36,6 @@ function App() {
     return () => {};
   }, [route]);
 
-  console.log(route, "route");
-  console.log(currentList, "current List");
-
   return (
     <div className="font-work-sans">
       {route === HOME && <Home />}

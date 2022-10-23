@@ -38,7 +38,7 @@ function Watch({ currentList }) {
           currentVideo={currentVideo}
         />
 
-        <div className="no-scrollbar w-full overflow-auto bg-secondary-extra-dark semi-xl:sticky semi-xl:top-1/10 semi-xl:h-9/10">
+        <div className="no-scrollbar w-full overflow-auto rounded-lg bg-secondary-extra-dark semi-xl:sticky semi-xl:top-1/10 semi-xl:h-9/10">
           {route === SINGLEVIDEO && infoState === SUGGESTIONS && (
             <div>
               <h3 className="py-2 text-center text-lg"> Suggestions </h3>

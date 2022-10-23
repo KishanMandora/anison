@@ -14,7 +14,7 @@ function QueueCard({ video, currentList }) {
 
   return (
     <div
-      className={`relative my-2 grid w-full grid-cols-3 gap-3 p-3 ${isCurrentSong}`}
+      className={`relative my-2 grid w-full grid-cols-3 gap-3 rounded-md p-3 ${isCurrentSong}`}
     >
       <div>
         <img

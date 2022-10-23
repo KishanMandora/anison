@@ -16,7 +16,7 @@ function CommentsCard({ comments }) {
             return (
               <div
                 key={comment.comment}
-                className="my-2 bg-secondary-light p-3"
+                className="my-2 rounded-md bg-secondary-light p-3"
               >
                 <p className="text-sm"> {comment.comment} </p>
                 <span className="text-xs italic">by {comment.commenter}</span>

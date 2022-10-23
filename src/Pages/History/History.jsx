@@ -26,7 +26,7 @@ function History() {
             );
           })}
         </div>
-        <div className="right-0 col-span-2 mr-14 hidden h-8/10 w-2/6 overflow-y-auto bg-secondary-dark p-8 semi-xl:fixed semi-xl:block">
+        <div className="right-0 col-span-2 mr-14 hidden h-8/10 w-2/6 overflow-y-auto rounded-lg bg-secondary-dark p-8 semi-xl:fixed semi-xl:block">
           <div className="flex w-full">
             <input
               type="text"
@@ -43,15 +43,15 @@ function History() {
           <div className="px-4">
             <label htmlFor="dragon" className="flex w-full justify-between">
               <span className="font-medium"> Dragon Ball Z</span>
-              <input type="radio" name="dragon" id="dragon" />
+              <input type="checkbox" name="dragon" id="dragon" />
             </label>
             <label htmlFor="naruto" className="flex w-full justify-between">
               <span className="font-medium"> Naruto</span>
-              <input type="radio" name="naruto" id="naruto" />
+              <input type="checkbox" name="naruto" id="naruto" />
             </label>
             <label htmlFor="one piece" className="flex w-full justify-between">
               <span className="font-medium"> One Piece</span>
-              <input type="radio" name="one piece" id="one piece" />
+              <input type="checkbox" name="one piece" id="one piece" />
             </label>
           </div>
 
@@ -59,15 +59,15 @@ function History() {
           <div className="px-4">
             <label htmlFor="musicality" className="flex w-full justify-between">
               <span className="font-medium">Musicality</span>
-              <input type="radio" name="musicality" id="musicality" />
+              <input type="checkbox" name="musicality" id="musicality" />
             </label>
             <label htmlFor="shinzu" className="flex w-full justify-between">
               <span className="font-medium"> Shinzu Music</span>
-              <input type="radio" name="shinzu" id="shinzu" />
+              <input type="checkbox" name="shinzu" id="shinzu" />
             </label>
             <label htmlFor="lezbeepic" className="flex w-full justify-between">
               <span className="font-medium"> Lezbeepic </span>
-              <input type="radio" name="lezbeepic" id="lezbeepic" />
+              <input type="checkbox" name="lezbeepic" id="lezbeepic" />
             </label>
           </div>
         </div>

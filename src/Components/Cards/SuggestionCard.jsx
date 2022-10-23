@@ -8,7 +8,7 @@ function SuggestionCard({ suggestion }) {
     title.length > 35 ? title.substring(0, 35) + "..." : title;
 
   return (
-    <div className="my-2 grid w-full grid-cols-3 gap-3 bg-secondary-light p-3">
+    <div className="my-2 grid w-full grid-cols-3 gap-3 rounded-md bg-secondary-light p-3">
       <div>
         <img
           className=" hidden h-full semi-xl:block"
