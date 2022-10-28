@@ -4,7 +4,11 @@ import { DotsSvg } from "../Svg/Svg";
 
 function ExploreCard({ video, setCurrentList }) {
   const { setRoute } = useTempContext();
-  const { imageUrl, duration, title } = video;
+  const {
+    thumbnails: { high: imageUrl },
+    duration,
+    title,
+  } = video;
 
   const displayTitle =
     title.trim().length > 40 ? title.substring(0, 40) + "..." : title + "";

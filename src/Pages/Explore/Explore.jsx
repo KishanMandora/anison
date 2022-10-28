@@ -5,15 +5,22 @@ import {
   ExploreCard,
   SearchNavbar,
 } from "~/Components";
-import { videosData as data } from "../../data";
+// import { videosData as data } from "../../data";
+import { renderData as data } from "../../finalData";
+
+const useData = data.sort((a, b) => Number(b.views) - Number(a.views));
+
+console.log(useData.length, "is arr length");
 
 function Explore({ setCurrentList }) {
+  console.log("data is ", data);
+
   return (
     <div className="min-h-screen">
       <SearchNavbar />
       <Dropdown />
       <section className="grid-container">
-        {data.map((video) => {
+        {useData.map((video) => {
           return (
             <ExploreCard
               key={video.id}

@@ -1,5 +1,5 @@
 function DescriptionCard({ currentVideo }) {
-  const { title, likes, views, channelName, description } = currentVideo;
+  const { title, likeStr, viewStr, channelName, description } = currentVideo;
   return (
     <div className="p-4">
       <h2 className="mb-4 text-lg font-bold"> {title} </h2>
@@ -13,11 +13,11 @@ function DescriptionCard({ currentVideo }) {
       </div>
       <div className="my-4 flex justify-evenly border-b p-2 font-bold">
         <div>
-          <span> {likes} likes </span>
+          <span> {likeStr} likes </span>
         </div>
         ||
         <div>
-          <span> {views} views </span>
+          <span> {viewStr} views </span>
         </div>
       </div>
       <div className="text-sm"> {description} </div>

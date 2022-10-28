@@ -17,7 +17,7 @@ import {
 
 function VideoCard({ setInfoState, infoState, currentVideo }) {
   const { route } = useTempContext();
-  const { id, title, views, likes, channelName } = currentVideo;
+  const { id, title, likeStr, viewStr, channelName } = currentVideo;
 
   const isActive = (btnState) =>
     infoState === btnState ? "bg-white text-black" : "";
@@ -38,7 +38,7 @@ function VideoCard({ setInfoState, infoState, currentVideo }) {
       <div className="px-4">
         <h2 className="pt-1 text-lg">{title}</h2>
         <div className="text-xs">
-          <span> {views} views </span> •<span> {likes} likes </span>
+          <span> {viewStr} views </span> •<span> {likeStr} likes </span>
         </div>
         <div className="grid grid-cols-4 items-center md:grid-cols-5">
           <div className="hidden w-full py-2 px-1 md:block">
