@@ -17,7 +17,19 @@ import {
 
 function VideoCard({ setInfoState, infoState, currentVideo }) {
   const { route } = useTempContext();
-  const { id, title, likeStr, viewStr, channelName } = currentVideo;
+  const {
+    id,
+    title,
+    likeStr,
+    viewStr,
+    channelName,
+    channelLink,
+    channelImage: { default: dp },
+  } = currentVideo;
+
+  const dpImg =
+    dp ??
+    "https://yt3.ggpht.com/su845d81gAvBm-WLD0L-CsYSOvdwbXZWs9yKze1TUVRa_A0P1ejiWmoR5YLEF4EFyXqRu2IHaQ=s88-c-k-c0x00ffffff-no-rj";
 
   const isActive = (btnState) =>
     infoState === btnState ? "bg-white text-black" : "";
@@ -44,10 +56,16 @@ function VideoCard({ setInfoState, infoState, currentVideo }) {
           <div className="hidden w-full py-2 px-1 md:block">
             <img
               className="inline-block h-8 w-8 rounded-full ring-neutral-300 hover:ring-2"
-              src="https://yt3.ggpht.com/su845d81gAvBm-WLD0L-CsYSOvdwbXZWs9yKze1TUVRa_A0P1ejiWmoR5YLEF4EFyXqRu2IHaQ=s88-c-k-c0x00ffffff-no-rj"
+              src={dpImg}
               alt={channelName}
             />
-            <span className="hidden text-sm md:inline"> {channelName} </span>
+            <a
+              className="hidden pl-2 text-sm md:inline"
+              href={channelLink}
+              target="blank"
+            >
+              {channelName}
+            </a>
           </div>
           <div className="flex w-full flex-col items-center py-2 px-1">
             <LikeSvg />

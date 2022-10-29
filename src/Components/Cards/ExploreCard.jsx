@@ -22,7 +22,7 @@ function ExploreCard({ video, setCurrentList }) {
       }}
     >
       <div>
-        <img src={imageUrl} alt={title} className="rounded" />
+        <img src={imageUrl} alt={title} loading="lazy" className="rounded" />
       </div>
       <div className="flex justify-between">
         <span className="mb-2 block font-bold"> {displayTitle} </span>

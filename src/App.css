@@ -33,15 +33,3 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-
-/* to hide YT suggestions */
-.ytp-title-enable-channel-logo:not(.ytp-mweb-player)
-  .html5-endscreen:not(.ytp-shorts-branded-ui) {
-  margin-top: 16px;
-  display: none;
-}
-
-.html5-endscreen.ytp-player-content.videowall-endscreen.ytp-endscreen-paginate.ytp-show-tiles {
-  display: none;
-  background-color: aqua;
-}
