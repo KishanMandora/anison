@@ -1,5 +1,7 @@
+import { Blurhash } from "react-blurhash";
 import { SINGLEVIDEO } from "~/constants";
 import { useTempContext } from "~/Context/TempContext";
+import { ImgLazyLoad } from "../index";
 import { DotsSvg } from "../Svg/Svg";
 
 function ExploreCard({ video, setCurrentList }) {
@@ -8,6 +10,7 @@ function ExploreCard({ video, setCurrentList }) {
     thumbnails: { high: imageUrl },
     duration,
     title,
+    hash,
   } = video;
 
   const displayTitle =
@@ -15,14 +18,14 @@ function ExploreCard({ video, setCurrentList }) {
 
   return (
     <div
-      className="rounded-md"
+      className="min-h-80 flex flex-col rounded-md"
       onClick={() => {
         setRoute(SINGLEVIDEO);
         setCurrentList((prev) => [video]);
       }}
     >
-      <div>
-        <img src={imageUrl} alt={title} loading="lazy" className="rounded" />
+      <div className="">
+        <ImgLazyLoad imageUrl={imageUrl} title={title} hash={hash} />
       </div>
       <div className="flex justify-between">
         <span className="mb-2 block font-bold"> {displayTitle} </span>

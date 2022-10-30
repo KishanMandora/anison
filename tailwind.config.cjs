@@ -9,7 +9,11 @@ module.exports = {
       height: {
         "8/10": "80%",
         "9/10": "90%",
+        90: "22.5rem",
         120: "30rem",
+      },
+      minHeight: {
+        60: "15rem",
       },
       width: {
         "9/10": "90%",

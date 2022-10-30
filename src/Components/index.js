@@ -12,6 +12,7 @@ export { DescriptionCard } from "./Cards/DescriptionCard";
 export { CommentsCard } from "./Cards/CommentsCard";
 export { QueueCard } from "./Cards/QueueCard";
 export { Form } from "./Form/Form";
+export { ImgLazyLoad } from "./ImgLazyLoad/ImgLazyLoad";
 export {
   HistorySvg,
   ExploreSvg,

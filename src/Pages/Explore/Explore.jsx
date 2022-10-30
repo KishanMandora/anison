@@ -7,9 +7,9 @@ import {
 } from "~/Components";
 import { exploreData as data } from "../../finalData";
 
-function Explore({ setCurrentList }) {
-  console.log("data is ", data);
+console.log(data, "from new data");
 
+function Explore({ setCurrentList }) {
   return (
     <div className="min-h-screen">
       <SearchNavbar />
