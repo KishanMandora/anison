@@ -1,3 +1,5 @@
+import { PLAY_LIKED, PLAY_WATCH } from "./constants";
+
 const exploreData = [
   {
     id: "OEZdKA9nffo",
@@ -4715,7 +4717,7 @@ const exploreData = [
 
 const playlistsData = [
   {
-    id: 1,
+    id: PLAY_WATCH,
     title: "Watch Later",
     coverLink: "./later.png",
     videosList: [
@@ -4904,7 +4906,7 @@ const playlistsData = [
     ],
   },
   {
-    id: 2,
+    id: PLAY_LIKED,
     title: "Liked Music",
     coverLink: "./liked.png",
     videosList: [

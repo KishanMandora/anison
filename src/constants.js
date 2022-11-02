@@ -12,6 +12,8 @@ const PLAYLISTQUEUE = "playlistqueue";
 const ACCOUNT = "account";
 const SIGNIN = "signin";
 const SIGNUP = "signup";
+const PLAY_LIKED = "play_like";
+const PLAY_WATCH = "play_watch";
 
 export {
   HOME,
@@ -28,4 +30,6 @@ export {
   ACCOUNT,
   SIGNIN,
   SIGNUP,
+  PLAY_LIKED,
+  PLAY_WATCH,
 };

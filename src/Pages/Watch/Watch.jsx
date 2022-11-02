@@ -20,7 +20,7 @@ import {
 import { useTempContext } from "~/Context/TempContext";
 import { suggestionsData as data } from "~/data";
 
-function Watch({ currentList }) {
+function Watch({ currentList, setPlaylists }) {
   const { route } = useTempContext();
   const [infoState, setInfoState] = useState(() =>
     route === SINGLEPLAYLIST ? PLAYLISTQUEUE : SUGGESTIONS
@@ -36,6 +36,7 @@ function Watch({ currentList }) {
           setInfoState={setInfoState}
           infoState={infoState}
           currentVideo={currentVideo}
+          setPlaylists={setPlaylists}
         />
 
         <div className="no-scrollbar w-full overflow-auto rounded-lg bg-secondary-extra-dark semi-xl:sticky semi-xl:top-1/10 semi-xl:h-9/10">

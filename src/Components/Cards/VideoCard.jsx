@@ -4,6 +4,8 @@ import {
   SINGLEPLAYLIST,
   SUGGESTIONS,
   PLAYLISTQUEUE,
+  PLAY_LIKED,
+  PLAY_WATCH,
 } from "~/constants";
 import { useTempContext } from "~/Context/TempContext";
 import {
@@ -15,7 +17,7 @@ import {
   ShareSvg,
 } from "../Svg/Svg";
 
-function VideoCard({ setInfoState, infoState, currentVideo }) {
+function VideoCard({ setInfoState, infoState, currentVideo, setPlaylists }) {
   const { route } = useTempContext();
   const {
     id,
@@ -26,6 +28,19 @@ function VideoCard({ setInfoState, infoState, currentVideo }) {
     channelLink,
     channelImage: { default: channelAvatar },
   } = currentVideo;
+
+  const handlePlaylistsUpdate = (playlistId) => {
+    setPlaylists((prev) =>
+      prev.map((list) => {
+        if (list.id === playlistId) {
+          list = { ...list, videosList: [...list.videosList, currentVideo] };
+          return list;
+        } else {
+          return list;
+        }
+      })
+    );
+  };
 
   const isActive = (btnState) =>
     infoState === btnState ? "bg-white text-black" : "";
@@ -63,7 +78,10 @@ function VideoCard({ setInfoState, infoState, currentVideo }) {
               {channelName}
             </a>
           </div>
-          <div className="flex w-full flex-col items-center py-2 px-1">
+          <div
+            className="flex w-full cursor-pointer flex-col items-center py-2 px-1"
+            onClick={() => handlePlaylistsUpdate(PLAY_LIKED)}
+          >
             <LikeSvg />
             <span className="text-xs"> Like </span>
           </div>
@@ -75,7 +93,10 @@ function VideoCard({ setInfoState, infoState, currentVideo }) {
             <ShareSvg />
             <span className="text-xs">Share</span>
           </div>
-          <div className="flex w-full flex-col items-center py-2 px-1">
+          <div
+            className="flex w-full flex-col items-center py-2 px-1"
+            onClick={() => handlePlaylistsUpdate(PLAY_WATCH)}
+          >
             <SaveToPlaylist />
             <span className="text-xs"> Save </span>
           </div>

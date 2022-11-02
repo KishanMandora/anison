@@ -30,6 +30,8 @@ function App() {
   const [currentList, setCurrentList] = useState([]);
   const [playlists, setPlaylists] = useState(data);
 
+  console.log(setPlaylists, "from app");
+
   useLayoutEffect(() => {
     if (route !== SINGLEVIDEO && route !== SINGLEPLAYLIST) {
       setCurrentList([]);
@@ -47,8 +49,12 @@ function App() {
       )}
       {route === SUBSCRIPTIONS && <Subscriptions />}
       {route === HISTORY && <History />}
-      {route === SINGLEVIDEO && <Watch currentList={currentList} />}
-      {route === SINGLEPLAYLIST && <Watch currentList={currentList} />}
+      {route === SINGLEVIDEO && (
+        <Watch currentList={currentList} setPlaylists={setPlaylists} />
+      )}
+      {route === SINGLEPLAYLIST && (
+        <Watch currentList={currentList} setPlaylists={setPlaylists} />
+      )}
       {route === ACCOUNT && <Account />}
       {(route === SIGNIN || route === SIGNUP) && <Auth />}
     </div>
