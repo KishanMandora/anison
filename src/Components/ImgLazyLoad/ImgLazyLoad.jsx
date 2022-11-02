@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Blurhash } from "react-blurhash";
 
-function ImgLazyLoad({ imageUrl, title, hash }) {
+function ImgLazyLoad({ imageUrl, title, hash, height = 250 }) {
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -15,16 +15,18 @@ function ImgLazyLoad({ imageUrl, title, hash }) {
           onLoad={() => setLoaded(true)}
         />
       </div>
-      {!loaded && (
-        <Blurhash
-          hash={hash}
-          width="100%"
-          // height={}
-          resolutionX={32}
-          resolutionY={32}
-          punch={1}
-        />
-      )}
+      <div className="h-full w-full">
+        {!loaded && (
+          <Blurhash
+            hash={hash}
+            width="100%"
+            height={height}
+            resolutionX={32}
+            resolutionY={32}
+            punch={1}
+          />
+        )}
+      </div>
     </div>
   );
 }

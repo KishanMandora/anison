@@ -1,7 +1,11 @@
 import { DeleteSvg } from "../Svg/Svg";
 
 function QueueCard({ video, currentList }) {
-  const { title, channelName, imageUrl, mediumImage } = video;
+  const {
+    title,
+    channelName,
+    thumbnails: { default: small, medium },
+  } = video;
 
   const displayTitle =
     title.length > 60 ? title.substring(0, 60) + "..." : title;
@@ -17,14 +21,10 @@ function QueueCard({ video, currentList }) {
       className={`relative my-2 grid w-full grid-cols-3 gap-3 rounded-md p-3 ${isCurrentSong}`}
     >
       <div>
-        <img
-          className=" hidden h-full semi-xl:block"
-          src={imageUrl}
-          alt={title}
-        />
+        <img className=" hidden h-full semi-xl:block" src={small} alt={title} />
         <img
           className=" block h-full semi-xl:hidden"
-          src={mediumImage}
+          src={medium}
           alt={title}
         />
       </div>

@@ -5,22 +5,32 @@ import { singlePlayListData } from "~/data";
 
 function PlaylistCard({ playlist, setCurrentList }) {
   const { setRoute } = useTempContext();
-  const { title, coverLink, totalSongs } = playlist;
+  const { title, coverLink, videosList } = playlist;
+
+  console.log(videosList);
 
   return (
     <div
       className="rounded-md"
       onClick={() => {
-        setCurrentList(singlePlayListData);
+        setCurrentList(videosList);
         setRoute(SINGLEPLAYLIST);
       }}
     >
       <div className="relative">
         <div>
-          <img src={coverLink} alt={title} className="rounded" />
+          {videosList.length > 0 ? (
+            <img
+              src={videosList[0]?.thumbnails.high || ""}
+              alt={title}
+              className="rounded"
+            />
+          ) : (
+            <img src={coverLink} alt={title} className="rounded" />
+          )}
         </div>
-        <div className="absolute top-2/4 right-0  my-auto flex h-2/4 w-full items-center justify-center bg-secondary-transparent p-4 text-xl">
-          <span> {totalSongs} </span>
+        <div className="absolute top-0 right-0 my-auto flex h-full items-center justify-center bg-secondary-transparent p-4 text-xl">
+          <span> {videosList.length} </span>
           <PlaylistSvg />
         </div>
         <button className="delete bottom">

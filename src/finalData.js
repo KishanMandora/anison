@@ -4713,4 +4713,357 @@ const exploreData = [
   },
 ];
 
-export { exploreData };
+const playlistsData = [
+  {
+    id: 1,
+    title: "Watch Later",
+    coverLink: "./later.png",
+    videosList: [
+      {
+        id: "7DNWHMqchBM",
+        title: 'Naruto - "Wind" Trap Remix',
+        channelName: "TrapMusicHDTV",
+        channelId: "UCaB_KyYOjfNHBm0f-TvBmiw",
+        duration: "3 min 32 sec",
+        views: "14263977",
+        likes: "194697",
+        thumbnails: {
+          default: "https://i.ytimg.com/vi/7DNWHMqchBM/default.jpg",
+          medium: "https://i.ytimg.com/vi/7DNWHMqchBM/mqdefault.jpg",
+          high: "https://i.ytimg.com/vi/7DNWHMqchBM/hqdefault.jpg",
+          standard: "https://i.ytimg.com/vi/7DNWHMqchBM/sddefault.jpg",
+          max: "https://i.ytimg.com/vi/7DNWHMqchBM/maxresdefault.jpg",
+        },
+        description:
+          "Naruto - \"Wind\" Trap Remix\nRemixed by TrackGonEat\n\n🎧 Follow TrapMusicHD 🎧\nFacebook: https://www.facebook.com/TrapMusicHD\nTwitter: https://twitter.com/TrapMusicHD\nSoundcloud: https://soundcloud.com/trapmusichd\nInstagram: http://instagram.com/trapmusichdtv\nVK: http://vk.com/trapmusichdtv\nSnapchat: TrapMusicHD\nMusical.ly: TrapMusicHD\n\n💎 Follow TrackGonEat 💎\nYoutube: https://www.youtube.com/LightSkinJedi\nSoundcloud: https://soundcloud.com/trackgoneat\nInstagram: https://www.instagram.com/TrackGonEat\n\nArtwork by CTiahao:\nArtstation: https://www.artstation.com/artist/ctiahao\n\n🎶 HD Family 🎶\nRapMusicHD: https://goo.gl/J1Noub\nBassMusicHD: https://goo.gl/0RN70B\nChillMusicHD: https://goo.gl/EXAoAh\nHouseMusicHD: https://goo.gl/l51Abz\nEDMMusicHD: https://goo.gl/iGNNwY\nGanjaMusicHD: https://goo.gl/fXdWrL\n\nAll 'Sunday - Funday' uploads: https://goo.gl/G4KK1d\n\n✅ All Copyright free music playlist: http://goo.gl/lo248y",
+        comments: [
+          {
+            commentId: "Ugw-NkzTsyHNFO7szzd4AaABAg",
+            comment:
+              "75 % Naruto fans \n10 % Hinata husband fans \n10 % Minato sons fans\n  5  % Boruto fathers fans",
+            commenter: "Kageyama Shigeo",
+          },
+          {
+            commentId: "Ugxwh9eNfqWyjcPt7tx4AaABAg",
+            comment:
+              "How much chakra did you spend to create this Ultimate Masterpiece?",
+            commenter: "Saiki Kusuo",
+          },
+          {
+            commentId: "UgyR1F4_F56zQyc5EJV4AaABAg",
+            comment:
+              "Sharigan is red\nRasengan is blue\nIf you dont get nostalgia from this\nI will summon kurama on you.",
+            commenter: "Liebert Johan",
+          },
+          {
+            commentId: "UgwIn_N0qaszhXy7ejB4AaABAg",
+            comment: "the nostalgia hits harder than your dads belt.",
+            commenter: "Ishigami Yuu",
+          },
+          {
+            commentId: "UgxPhJcLm4hf3FUkfs94AaABAg",
+            comment: "Who’s Still Listening To This In 2020?",
+            commenter: "Kitagawa Marin",
+          },
+        ],
+        animeId: "anime_naruto",
+        anime: "Naruto",
+        channelLink: "https://www.youtube.com/channel/UCaB_KyYOjfNHBm0f-TvBmiw",
+        channelImage: {
+          default:
+            "https://yt3.ggpht.com/ytc/AMLnZu9It2dotTOu-QQi_3vQeDfmfVw6t0U2a8qvglUfqQ=s88-c-k-c0x00ffffff-no-rj",
+          medium:
+            "https://yt3.ggpht.com/ytc/AMLnZu9It2dotTOu-QQi_3vQeDfmfVw6t0U2a8qvglUfqQ=s480-c-k-c0x00ffffff-no-rj",
+        },
+        likeStr: "195K",
+        viewStr: "14M",
+        hash: "UTHULgOv9H-4~WxvRlM{0JxU%LI=4.M{oyxt",
+      },
+      {
+        id: "rL2IBrwgLIo",
+        title:
+          "Dragon Ball Super - Ultra Instinct Remix | [Clash of the Gods] | Hip Hop/Trap | (Musicality Remix)",
+        channelName: "Musicality",
+        channelId: "UCugVYo6tK-51zscboSgSXNg",
+        duration: "4 min 23 sec",
+        views: "11941756",
+        likes: "182549",
+        thumbnails: {
+          default: "https://i.ytimg.com/vi/rL2IBrwgLIo/default.jpg",
+          medium: "https://i.ytimg.com/vi/rL2IBrwgLIo/mqdefault.jpg",
+          high: "https://i.ytimg.com/vi/rL2IBrwgLIo/hqdefault.jpg",
+          standard: "https://i.ytimg.com/vi/rL2IBrwgLIo/sddefault.jpg",
+          max: "https://i.ytimg.com/vi/rL2IBrwgLIo/maxresdefault.jpg",
+        },
+        description:
+          '*REQUESTED*  By Goku himself\n\nHad to do my take on the Ultra Instinct theme, many of yall have been asking for it, BUT I JUST HAD TO DO IT, ITS JUST TO FIRE\n\n#ultrainstinct #musicality #goku\n\nArtist - https://angelarts2.deviantart.com/\n\nOST Remake by:  @PokéMixr92 - https://www.youtube.com/user/Slhtubit92\n\n\nSoundcloud version: https://soundcloud.com/musicality-beats/ultra-instinct-musicality-remix\n--------------------------------------------------------------------------------------------\nDiscord - https://discord.gg/YkpqgaG\nWant to use my work/Music? READ THIS,\nhttps://www.youtube.com/user/yungjazz101/about\n\nOfficial Website  -  http://www.musicalitymusic.net/\nFree Download: http://bsta.rs/qy329\n\nRapping/Singing on my remixes are non-profit unless you need to lease. You can not distribute my remixes/beats without paying  exclusive rights. \n\nAlways credit me: "@Musicality"\n\nHave a Request? Click Here!! - https://www.youtube.com/watch?v=73hYberWaWg\n\nIf you wanna donate lol - https://www.paypal.me/MusicalityMusic\n\nLike, Sub, and Comment for more beats and remixes!!\n--------------------------------------------------------------------------------------------\nFOLLOW ME AND ADD ME ON,\nTwitter -  https://twitter.com/Musicalitybeats\nMain SoundCloud -  https://soundcloud.com/musicalitymusic\nRemix SoundCloud - https://soundcloud.com/musicality-beats\nTumblr - http://thatjazzymusicality.tumblr.com/\nInstagram - http://instagram.com/musicalitybeats\nPS4 - NeW-ErA_JaZZiiNo\n--------------------------------------------------------------------------------------------\nMusicality - Ultra Instinct (0:00)\nThanks for listening! (4:04)',
+        comments: [
+          {
+            commentId: "Ugz1mkqNvTQWPJSf3LZ4AaABAg",
+            comment:
+              'FUN FACT: \nIf you listen closely enough you\'ll hear me saying \n"Ultra Instinct" and doing the 3OO war style breathing. \n\nStream on Spotify / Download: https://fanlink.to/UltraInstinctRemix\n\nCeeday gang I see you 😂😂\n\nNew Dragon Ball Super Remix here: https://www.youtube.com/watch?v=5PD_pO6WZew\n\n» Connect with Musicality\nhttps://fanlink.to/musicalitysocials',
+            commenter: "Yagami Light",
+          },
+          {
+            commentId: "UgyLx8heC3k22kCNY8B4AaABAg",
+            comment: "*when you perfectly peel an orange without stopping*",
+            commenter: "Zoldyck Killua",
+          },
+          {
+            commentId: "UgwoiDSNAeOvh8laDbZ4AaABAg",
+            comment: "“This product kills 99% of germs!” \n\nThe 1% of germs:",
+            commenter: "Okabe Rintarou",
+          },
+          {
+            commentId: "Ugwg1iwntZ9LOu228-F4AaABAg",
+            comment:
+              "I remember when Ceeday used this as his outro theme. Back then I had no idea it was from Dragon Ball, I just thought it was some random song but then after I started watching Dragon Ball Super a couple years later I realized what it was actually from and nearly had a brain aneurysm.",
+            commenter: "Elric Edward",
+          },
+          {
+            commentId: "UgylmpgNLnbwsPY6IR14AaABAg",
+            comment: "When your moms belt hits and slaps don’t hurt anymore:",
+            commenter: "Uzumaki Naruto",
+          },
+        ],
+        animeId: "anime_dragon_ball",
+        anime: "Dragon Ball",
+        channelLink: "https://www.youtube.com/channel/UCugVYo6tK-51zscboSgSXNg",
+        channelImage: {
+          default:
+            "https://yt3.ggpht.com/ytc/AMLnZu9xzRSO4VK1iryYU7Q0QBJWngmv3x6cqw2WAdiR4g=s88-c-k-c0x00ffffff-no-rj-mo",
+          medium:
+            "https://yt3.ggpht.com/ytc/AMLnZu9xzRSO4VK1iryYU7Q0QBJWngmv3x6cqw2WAdiR4g=s480-c-k-c0x00ffffff-no-rj-mo",
+        },
+        likeStr: "183K",
+        viewStr: "12M",
+        hash: "UtLg;Tju~poftRofRjjs0Jj[IUayaeayWVj[",
+      },
+      {
+        id: "SVhHhtG4DPM",
+        title: "Demon Slayer: Rengoku Theme | EPIC VERSION (Rengoku 9th Form)",
+        channelName: "Samuel Kim Music",
+        channelId: "UCuoKuTCQ9dmPIgOgyLm9HgQ",
+        duration: "6 min 33 sec",
+        views: "10425021",
+        likes: "145114",
+        thumbnails: {
+          default: "https://i.ytimg.com/vi/SVhHhtG4DPM/default.jpg",
+          medium: "https://i.ytimg.com/vi/SVhHhtG4DPM/mqdefault.jpg",
+          high: "https://i.ytimg.com/vi/SVhHhtG4DPM/hqdefault.jpg",
+          standard: "https://i.ytimg.com/vi/SVhHhtG4DPM/sddefault.jpg",
+          max: "https://i.ytimg.com/vi/SVhHhtG4DPM/maxresdefault.jpg",
+        },
+        description:
+          "Mugen Train OST by Go Shiina and Yuki Kajiura. Epic Cover by Samuel Kim\n♫ Demon Slayer EPIC SPOTIFY PLAYLIST ► https://spoti.fi/3rqG7U1\n♫ Demon Slayer EPIC PLAYLIST ► https://www.youtube.com/playlist?list=PL9PLUrw0CbcRgiyHiI8SLfIKWAmPuyquC\n🎧 Support my work on Patreon (HQ Mp3 & Wave)  ► https://www.patreon.com/samuelkimmusic\n👍 Buy me some Coffee ► https://www.buymeacoffee.com/samuelkimmusic\n\n🎧 My Music is Available Here 🎧\n► Spotify: https://spoti.fi/2vYKPBd\n► Apple Music/iTunes: https://apple.co/2wMUESQ\n► YouTube Music: https://bit.ly/2VFh8z9\n► Deezer: https://bit.ly/3eTNaPt\n\nConnect With Me on Social Media!\n►Instagram: https://www.instagram.com/samuelkimmusic\n►Twitter: https://twitter.com/samuelkimmusic\n\nThumbnail/Artwork #2 by 風李たゆ: https://www.pixiv.net/en/artworks/85126056\nArtwork #1 by: Found on Google with no link to source. (If you are the artist or know the source please email me so I can give proper credit!)\nArtwork #3 by Muztnafi: https://www.deviantart.com/muztnafi/art/Rengoku-837559826\n\nAll copyright belongs to their respective owners. \nDemon Slayer Mugen Train OST by Go Shiina and Yuki Kajiura\nArranged & Orchestrated by Samuel Kim\n\n#DemonSlayerMugenTrain #DemonSlayer #mugentrain #鬼滅の刃\n__________________________________________________________________________________________________ ***DO NOT RE-UPLOAD on YouTube or other platforms (Soundcloud, TikTok, etc.) It is strictly prohibited to use my covers/arrangements for Podcasts (Spotify/Apple Podcasts) Also DO NOT make remixes using my covers, and DO NOT illegally distribute my music to streaming platforms.\nIf you want to use my music for your YouTube videos, please visit: https://bit.ly/3oTIrlr",
+        comments: [
+          {
+            commentId: "Ugxd3UNr6TRzfFpkTVN4AaABAg",
+            comment:
+              "New Rengoku Theme from the Mugen Train Arc Episode!!!! 🔥 \nhttps://youtu.be/rVlSt4JM2t8",
+            commenter: "Inumaki Toge",
+          },
+          {
+            commentId: "UgwLlq-E5UvH6peDG214AaABAg",
+            comment:
+              '"Rengoku is the best character in all of anime" - Albert Einstein probably',
+            commenter: "Haruhara Haruko",
+          },
+          {
+            commentId: "Ugys__F4xF1vneCDjBJ4AaABAg",
+            comment:
+              "Rengoku's personality was so mesmerizing, bold, innocent and strong I don't think any hashira can become fan favourite in just 2 min of screen time.",
+            commenter: "Hyakkimaru",
+          },
+          {
+            commentId: "UgxV3bLJB8ym64EqGw54AaABAg",
+            comment:
+              '"Both growing old and passing away are things that make being human beautiful"\n- Rengoku',
+            commenter: "Edogawa Conan",
+          },
+          {
+            commentId: "UgzCFL-Uhc6QQSDlA654AaABAg",
+            comment:
+              "Haters : he lost \nReality : saved everyone on the train ,  protected the next generation demon slayers and nearly killed a s class demon",
+            commenter: "Nikiforov Victor",
+          },
+        ],
+        animeId: "anime_demon_slayer",
+        anime: "Demon Slayer",
+        channelLink: "https://www.youtube.com/channel/UCuoKuTCQ9dmPIgOgyLm9HgQ",
+        channelImage: {
+          default:
+            "https://yt3.ggpht.com/aXh5YnRZ_qnY3L2ZsfeXfiXqQj1x1TjAxFO7ywOCp__aDbum1gI2gsG52Q3NTMAectOYNqtqrA=s88-c-k-c0x00ffffff-no-nd-rj",
+          medium:
+            "https://yt3.ggpht.com/aXh5YnRZ_qnY3L2ZsfeXfiXqQj1x1TjAxFO7ywOCp__aDbum1gI2gsG52Q3NTMAectOYNqtqrA=s480-c-k-c0x00ffffff-no-nd-rj",
+        },
+        likeStr: "145K",
+        viewStr: "10M",
+        hash: "UCLMt#9j}+.98wu4?wEL00$yDjNHu6I9D$?a",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Liked Music",
+    coverLink: "./liked.png",
+    videosList: [
+      {
+        id: "di5TSD490n4",
+        title: "One Piece - Very Very Strongest (Bender Remix)[Free Download]",
+        channelName: "Benderofficiel",
+        channelId: "UCCEZZRQ8mDJQOdRS1MCZ83g",
+        duration: "2 min 21 sec",
+        views: "281344",
+        likes: "2254",
+        thumbnails: {
+          default: "https://i.ytimg.com/vi/di5TSD490n4/default.jpg",
+          medium: "https://i.ytimg.com/vi/di5TSD490n4/mqdefault.jpg",
+          high: "https://i.ytimg.com/vi/di5TSD490n4/hqdefault.jpg",
+          standard: "https://i.ytimg.com/vi/di5TSD490n4/sddefault.jpg",
+          max: "https://i.ytimg.com/vi/di5TSD490n4/maxresdefault.jpg",
+        },
+        description:
+          "Personalize your phone with a anime wallpapers.\nDownload: https://play.google.com/store/apps/details?id=com.solodevs.animewallpapers\n\n\nFree Download:\nhttp://www.mediafire.com/file/wi79e6d3saydszc/One_Piece_-_Very_Very_Strongest_%2528Bender_Remix%2529.mp3/file\n\n\n\n\nFacebook : www.facebook.com/BenderOfficiel\nTwitter : twitter.com/DJB3ND3R\n\n\nkeywords:\none piece,\none piece amv,\none piece ost,\none piece 835,\none piece 842,\none piece opening 1,\none piece 844,\none piece 834,\none piece 903,\none piece 836,\none piece 838,\none piece 843,\none piece at a time,\none piece anime,\none piece akainu,\none piece aokiji,\none piece amv zoro,\none piece arlong,\none piece amazon lily,\none piece alvida,\none piece amv luffy,\na one piece 2018 world cup companion dream soccer king,\na-z one piece,\na theory one piece,\none piece bizarre adventure,\none piece big mom,\none piece brook,\none piece burning blood,\none piece bizarre adventure hack,\none piece bizarre adventure haki,\none piece buggy,\none piece bikini,\none piece believe,\none piece bounty,\nmatt b one piece,\nblock b one piece,\nblock b one piece full fight,\nd&b one piece,\nyama-b one piece,\none piece block b amv",
+        comments: [
+          {
+            commentId: "UgytYM1CRSKkVZ-fK-94AaABAg",
+            comment:
+              "Personalize your phone with a anime wallpaper 4K, you will find a lot of collections that you like to share with friends or set as your wallpaper.\nDownload: https://play.google.com/store/apps/details?id=com.solodevs.animewallpapers",
+            commenter: "Rider",
+          },
+          {
+            commentId: "UgzZ6pBShCwj8T5Mm7l4AaABAg",
+            comment:
+              "Its going to be my Ringtone for a long long time...Just so perfect .",
+            commenter: "Tenma Kenzou",
+          },
+          {
+            commentId: "UgwnTSZmLvPMQYk2glV4AaABAg",
+            comment: "this makes me love one piece even more",
+            commenter: "Lucilfer Chrollo",
+          },
+          {
+            commentId: "UghaCdm-5kNCB3gCoAEC",
+            comment:
+              "awesomeness at its finest here, i get that jamba vibe with this, almost as if zoro and luffy showed up ready to kick ass in a samba gear lol",
+            commenter: "Milizé Vladilena",
+          },
+          {
+            commentId: "UgysP7LrNMOSBvppJ0N4AaABAg",
+            comment:
+              "this is my favorite remix ever thanks for the download I really appreciate it!",
+            commenter: "Braun Reiner",
+          },
+        ],
+        animeId: "anime_one_piece",
+        anime: "One Piece",
+        channelLink: "https://www.youtube.com/channel/UCCEZZRQ8mDJQOdRS1MCZ83g",
+        channelImage: {
+          default:
+            "https://yt3.ggpht.com/ytc/AMLnZu_9R0IwKKHTY9ZntkRtSfSovFrVa34VmYCIdLp2=s88-c-k-c0x00ffffff-no-rj",
+          medium:
+            "https://yt3.ggpht.com/ytc/AMLnZu_9R0IwKKHTY9ZntkRtSfSovFrVa34VmYCIdLp2=s480-c-k-c0x00ffffff-no-rj",
+        },
+        likeStr: "2.3K",
+        viewStr: "281K",
+        hash: "UNF5sp~BS0xuo}aLR%tQ0KM{V[IojEX7t7V@",
+      },
+      {
+        id: "nZrPPTWF6Sw",
+        title:
+          "Demon Slayer - Zenitsu Theme (Trap Remix) | (Naps Tho x Musicality Remix)",
+        channelName: "Musicality",
+        channelId: "UCugVYo6tK-51zscboSgSXNg",
+        duration: "2 min 58 sec",
+        views: "279938",
+        likes: "5282",
+        thumbnails: {
+          default: "https://i.ytimg.com/vi/nZrPPTWF6Sw/default.jpg",
+          medium: "https://i.ytimg.com/vi/nZrPPTWF6Sw/mqdefault.jpg",
+          high: "https://i.ytimg.com/vi/nZrPPTWF6Sw/hqdefault.jpg",
+          standard: "https://i.ytimg.com/vi/nZrPPTWF6Sw/sddefault.jpg",
+          max: "https://i.ytimg.com/vi/nZrPPTWF6Sw/maxresdefault.jpg",
+        },
+        description:
+          "Art By: https://www.artstation.com/artwork/OyVabJ\n\n🔥 Lets hit that 100k Goal! \n🌴 Second Channel: https://www.youtube.com/channel/UC6BNUxFShv5LTaaEU2VByog\n--------------------------------------------------------------------------------------------\nFAQ: https://www.musicalitymusic.net/faq\n\nSound/Drum Kit: https://www.musicalitymusic.net/kits\n\nFree Download: https://bsta.rs/1d67f8a3\n\nRapping/Singing on my remixes are non-profit unless you need to lease.\nAlways credit me!\n\nHave a Request? Click Here!! - https://www.youtube.com/watch?v=MgqA9vsfW_I\n\nIf you wanna donate lol - https://www.paypal.me/MusicalityMusic\n\nLike, Sub, and Comment for more beats and remixes!!\n--------------------------------------------------------------------------------------------\n» Connect with Naps Tho\n\nSoundcloud: https://soundcloud.com/iamnapstho \nInstagram: https://www.instagram.com/iamnapstho/?hl=en\nTwitter: https://twitter.com/itsnapstho\nSpotify: https://open.spotify.com/artist/3Gl6684cmNP2eXMwUszlRq?si=K_41C-6sRgmvoGZVbGZ_4 \nYoutube: https://www.youtube.com/channel/UCfz4vF1B0dIKDS2QTLRVoIA\n\n» Connect with Musicality\n\n● Website  -  http://www.musicalitymusic.net/\n● Email: Itsmusicality@gmail.com \n● Twitter: http://Twitter.com/Musicalitybeats\n● Spotify: https://open.spotify.com/artist/3jbwoqhl1GhkvC5rNBvHH3?si=WQyVCChLT12G26WTA9riuA\n● Facebook: http://Facebook.com/MusicalityMusic\n● Instagram: http://Instagram.com/musicalitymusic\n● SoundCloud: http://SoundCloud.com/musicalitymusic\n● SnapChat: http://snapchat.com/add/ijazzitup\nPS4 - ProdByMusicality\n\nFree downloads are for auditioning purposes only.\nPurchase a lease to use this instrumental commercially.\n--------------------------------------------------------------------------------------------",
+        comments: [
+          {
+            commentId: "UgybFWwaBgxzd6WSbvF4AaABAg",
+            comment:
+              "Fun fact: The supposed thunder claps an enemy hears from Zenitsu is actually him exhaling so loudly and moving so fast it sounds like thunder.",
+            commenter: "Fujioka Haruhi",
+          },
+          {
+            commentId: "Ugx2GLJgv-4Trt6RAb54AaABAg",
+            comment: "Zenitsu: *Sleeps*\nEnemy: Wait why do I hear boss music?",
+            commenter: "Kuroo Tetsurou",
+          },
+          {
+            commentId: "Ugz3bge56IbusA2LYdN4AaABAg",
+            comment:
+              "I wonder how strong will now Zenitsu be with perfect breathing technique.",
+            commenter: "Sesshoumaru",
+          },
+          {
+            commentId: "Ugz6PLlgGg6FQLArhf94AaABAg",
+            comment:
+              "God, yesterday I was doing sword training while listening to this. And my sword got stuck in the side of a tree. THIS BEAT GIVES ME POWER!!!.",
+            commenter: "Gokou Ruri",
+          },
+          {
+            commentId: "UgxyeOjF-4KHkoRCI_N4AaABAg",
+            comment:
+              "Roses are red\nViolets are blue \nUpper demons can be killed by a sleeping zenitsu",
+            commenter: "Nakano Azusa",
+          },
+        ],
+        animeId: "anime_demon_slayer",
+        anime: "Demon Slayer",
+        channelLink: "https://www.youtube.com/channel/UCugVYo6tK-51zscboSgSXNg",
+        channelImage: {
+          default:
+            "https://yt3.ggpht.com/ytc/AMLnZu9xzRSO4VK1iryYU7Q0QBJWngmv3x6cqw2WAdiR4g=s88-c-k-c0x00ffffff-no-rj-mo",
+          medium:
+            "https://yt3.ggpht.com/ytc/AMLnZu9xzRSO4VK1iryYU7Q0QBJWngmv3x6cqw2WAdiR4g=s480-c-k-c0x00ffffff-no-rj-mo",
+        },
+        likeStr: "5.3K",
+        viewStr: "280K",
+        hash: "U9EVc%?E0PIB~n--NyRl00jd^%xs9H9cMxxt",
+      },
+      {
+        id: "YF0Azpgi-tU",
+        title: "Espada",
+        channelName: "Musicality",
+        channelId: "UCugVYo6tK-51zscboSgSXNg",
+        duration: "3 min 29 sec",
+        views: "254692",
+        likes: "4312",
+        thumbnails: {
+          default: "https://i.ytimg.com/vi/YF0Azpgi-tU/default.jpg",
+          medium: "https://i.ytimg.com/vi/YF0Azpgi-tU/mqdefault.jpg",
+          high: "https://i.ytimg.com/vi/YF0Azpgi-tU/hqdefault.jpg",
+          standard: "https://i.ytimg.com/vi/YF0Azpgi-tU/sddefault.jpg",
+          max: "https://i.ytimg.com/vi/YF0Azpgi-tU/maxresdefault.jpg",
+        },
+        description:
+          "Provided to YouTube by DistroKid\n\n  Espada · Musicality\n  \n  Espada\n  \n  ℗ Musicality\n  \n  Released on: 2020-07-10",
+        comments: [],
+        animeId: "anime_bleach",
+        anime: "Bleach",
+        channelLink: "https://www.youtube.com/channel/UCugVYo6tK-51zscboSgSXNg",
+        channelImage: {
+          default:
+            "https://yt3.ggpht.com/ytc/AMLnZu9xzRSO4VK1iryYU7Q0QBJWngmv3x6cqw2WAdiR4g=s88-c-k-c0x00ffffff-no-rj-mo",
+          medium:
+            "https://yt3.ggpht.com/ytc/AMLnZu9xzRSO4VK1iryYU7Q0QBJWngmv3x6cqw2WAdiR4g=s480-c-k-c0x00ffffff-no-rj-mo",
+        },
+        likeStr: "4.3K",
+        viewStr: "255K",
+        hash: "U8BC.Eay00s:4Tj[~qWB0Kj[?vWB_3ay4nj[",
+      },
+    ],
+  },
+];
+
+export { exploreData, playlistsData };

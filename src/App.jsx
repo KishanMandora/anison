@@ -23,10 +23,12 @@ import {
 } from "./constants";
 import "./App.css";
 import { useLayoutEffect, useState } from "react";
+import { playlistsData as data } from "./finalData";
 
 function App() {
   const { route } = useTempContext();
   const [currentList, setCurrentList] = useState([]);
+  const [playlists, setPlaylists] = useState(data);
 
   useLayoutEffect(() => {
     if (route !== SINGLEVIDEO && route !== SINGLEPLAYLIST) {
@@ -40,7 +42,9 @@ function App() {
     <div className="font-work-sans">
       {route === HOME && <Home />}
       {route === EXPLORE && <Explore setCurrentList={setCurrentList} />}
-      {route === PLAYLISTS && <Playlists setCurrentList={setCurrentList} />}
+      {route === PLAYLISTS && (
+        <Playlists playlists={playlists} setCurrentList={setCurrentList} />
+      )}
       {route === SUBSCRIPTIONS && <Subscriptions />}
       {route === HISTORY && <History />}
       {route === SINGLEVIDEO && <Watch currentList={currentList} />}

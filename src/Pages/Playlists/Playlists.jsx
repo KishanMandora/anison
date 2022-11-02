@@ -1,12 +1,11 @@
 import { BottomNavbar, PlaylistCard, SearchNavbar } from "~/Components";
-import { playlistsData as data } from "~/data";
 
-function Playlists({ setCurrentList }) {
+function Playlists({ setCurrentList, playlists }) {
   return (
     <div>
       <SearchNavbar />
       <section className="grid-container mt-2">
-        {data.map((playlist) => {
+        {playlists.map((playlist) => {
           return (
             <PlaylistCard
               key={playlist.id}
