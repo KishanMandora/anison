@@ -1,0 +1,635 @@
+const videosData = [
+  {
+    id: "By_JYrhx-WY",
+    title: `Tokyo Revengers - Opening | Cry Baby"`,
+    duration: "1 min 40 sec",
+    imageUrl: "https://i.ytimg.com/vi/By_JYrhx-WY/hqdefault.jpg",
+    channelName: "Crunchyroll",
+    channelId: "UCOXVOtPz_Ag_dtVrpHBdkrA",
+    likes: "453K",
+    views: "22M",
+    description: `Artist: Official Hige Dandism
+    Song: Cry Baby
+    Watch Tokyo Revengers on Crunchyroll! https://got.cr/Watch-TROPED`,
+    comments: [
+      {
+        commentId: "UgwUEejzXMQV3qMJPjB4AaABAg",
+        comment:
+          "After long time Tokyo revenger is getting the attention that he deserves long before the anime adaptation ❤️",
+        commenter: "Takemichi",
+      },
+      {
+        commentId: "UgwTY52qnYhEYOrKhOp4AaABAg",
+        comment:
+          "When I started watching Tokyo Revengers I just watched 14 episodes in 1 day without break 🔥🔥",
+        commenter: "Naoto",
+      },
+      {
+        commentId: "UgyNIgxKH5KbavSYwCZ4AaABAg",
+        comment:
+          "Tokyo revenge is the one and only anime that attracted me !!!respect to everyone ❤️ I hope this anime will go on till longer time.",
+        commenter: "Draken",
+      },
+      {
+        commentId: "Ugx-08kUV8zSRj4kfAJ4AaABAg",
+        comment: `There's no other anime like Tokyo Revengers
+      It's the only one 🔥`,
+        commenter: "Mikey",
+      },
+      {
+        commentId: "UgxET3xHYLgO87ZcX7Z4AaABAg",
+        comment:
+          "One the best animes I've watched in 2022 !!! Cant wait for Season 2",
+        commenter: "Hanma Shuji",
+      },
+    ],
+  },
+  {
+    id: "OEZdKA9nffo",
+    title: "Naruto Shippuden - Samidare (ksolis Trap Remix)",
+    duration: "2 min 52 sec",
+    imageUrl: "https://i.ytimg.com/vi/OEZdKA9nffo/hqdefault.jpg",
+    views: "38M",
+    likes: "728K",
+    channelName: "ksolis",
+    channelId: "UCxIf84dVSW2lAiBmCLzQe1Q",
+    description:
+      "[AMV] Naruto Shippuden OST- Samidare (Early Summer Rain) [ksolis Trap Remix] Yamagsumi",
+    comments: [
+      {
+        commentId: "UggEvAFfNezpwngCoAEC",
+        comment: `This is amazing
+        I know it probably took you long to make it
+        So good job man`,
+        commenter: "Hashirama",
+      },
+      {
+        commentId: "UgxIA0MWKO3FnqCzfNF4AaABAg",
+        comment:
+          "To the future generations, please dont let this legendary series die!",
+        commenter: "Kakashi Hatake",
+      },
+      {
+        commentId: "Ugyvzbo9EJ_5Pg-3LPZ4AaABAg",
+        comment: `"Appreciate everything around you before they turn into memories"
+        ~Pervy sage`,
+        commenter: "Jiraya",
+      },
+      {
+        commentId: "UgzKUkJzHN8DATFbaLN4AaABAg",
+        comment: "No One Should Ever Let This Masterpiece Ever Die😔",
+        commenter: "Konohamaru",
+      },
+      {
+        commentId: "UgwDZsroGiorOEZHs4p4AaABAg",
+        comment: "This isnt just a music, its emotion and memory for me.",
+        commenter: "Naruto",
+      },
+    ],
+  },
+  {
+    id: "h2PJv-qbk1s",
+    title: `Naruto - "Blue Bird" Trap Remix`,
+    duration: "3 min 31 sec",
+    imageUrl: "https://i.ytimg.com/vi/h2PJv-qbk1s/hqdefault.jpg",
+    channelName: "TrapMusicHDTV",
+    channelId: "UCaB_KyYOjfNHBm0f-TvBmiw",
+    views: "17.3M",
+    likes: "378K",
+    description: `Naruto - "Blue Bird" Trap Remix
+    Remixed by TrackGonEat`,
+    comments: [
+      {
+        commentId: "Ugy5cGJ69IHgp8Pzty54AaABAg",
+        comment:
+          "Getting into Naruto was one of the best choices I've ever made",
+        commenter: "Boruto",
+      },
+      {
+        commentId: "Ugxpe-EDnihDl87lJQ94AaABAg",
+        comment: `"Don't cry because it's over, smile because it happened. "`,
+        commenter: "anonymous",
+      },
+      {
+        commentId: "UgzTEW0fWDJtPBT0ZgJ4AaABAg",
+        comment: `*"Those who disobey the rules are seen as scum in the ninja world, but those who abandon their friends, are worse than scum!"*`,
+        commenter: "Obito",
+      },
+      {
+        commentId: "UgznnuOudXY094JVcfp4AaABAg",
+        comment: `"When a man learns to love, he must bear the risk of hatred"`,
+        commenter: "OBITO UCHIHA",
+      },
+      {
+        commentId: "UgzDzNeU8L7jlDVmadd4AaABAg",
+        comment: `Your words cut deep, deeper than any blade`,
+        commenter: "Zabuza",
+      },
+    ],
+  },
+  {
+    id: "hpixPdt2jTA",
+    title: "Treachery (Bleach)",
+    duration: "2 min 2 sec",
+    imageUrl: "https://i.ytimg.com/vi/hpixPdt2jTA/hqdefault.jpg",
+    channelName: "Kayou. Beats - Topic",
+    channelId: "UCi8ywGtvZNhhPunj8LlEBAQ",
+    views: "32K",
+    likes: "414",
+    description: `Provided to YouTube by Soundrop
+
+    Treachery (Bleach) · Kayou. Beats
+    
+    Anime Trap Beats
+    
+    ℗ 2021 Kayou.
+    
+    Released on: 2022-06-24
+    
+    Lyricist: Sagisu Shiro
+    Composer: Sagisu Shiro
+    
+    Auto-generated by YouTube.`,
+    comments: [],
+  },
+  {
+    id: "Sft4iB2irc4",
+    title: "Go Beyond [My Hero Academia - Hip Hop beat]",
+    duration: "1 min 48 sec",
+    imageUrl: "https://i.ytimg.com/vi/Sft4iB2irc4/hqdefault.jpg",
+    channelName: "NOVILA [MUSIC]",
+    channelId: "UC2p0DuN8-tVedtMbjNMAOcw",
+    views: "875K",
+    likes: "21.3K",
+    description: `Original sample https://youtu.be/1YIyEnEDBdA
+    This is sampled so there's a fat chance this isn't copyright free, beware.`,
+    comments: [
+      {
+        commentId: "UgjGZFzacQYv_ngCoAEC",
+        comment: "Please watch my fan made trailer! 1:27",
+        commenter: "Eijiro Kirishima",
+      },
+      {
+        commentId: "UgzgJZLdxmUFEOv8jjp4AaABAg",
+        comment: "Almost three years, and we're still going beyond.",
+        commenter: "Deku",
+      },
+      {
+        commentId: "UgybGxWu_3Xzo0tt-kh4AaABAg",
+        comment:
+          "Beat slaps harder than my parents when I dont do da chores 🎧",
+        commenter: "Tenya Iida",
+      },
+      {
+        commentId: "Ugwl0ilI_LM7c0AC8Jt4AaABAg",
+        comment: `Name: Novila
+          Quirk: Beats
+          He can turn any type of music of any genere into hip hop beats. With additional speakers, he can enchance these beats to make an enemy implode.
+          Blood Type: Unknown
+          Age: Unknown
+          Favorite Food: Unknown`,
+        commenter: "Kyoka Jiro",
+      },
+      {
+        commentId: "UgwZe2ReWV8xIm3pLFZ4AaABAg",
+        comment: "Goosebumps from 0:00 to 1:47.",
+        commenter: "Ochako Uraraka",
+      },
+    ],
+  },
+];
+
+const animeData = [
+  {
+    id: 1,
+    anime: "One Piece",
+  },
+  {
+    id: 2,
+    anime: "Bleach",
+  },
+  {
+    id: 3,
+    anime: "Naruto",
+  },
+  {
+    id: 4,
+    anime: "Chainsaw Man",
+  },
+  {
+    id: 5,
+    anime: "Mob Psycho",
+  },
+];
+
+const playlistsData = [
+  {
+    id: 1,
+    title: "Watch Later",
+    coverLink: "https://i.ytimg.com/vi/ncBE6aD5JTk/hqdefault.jpg",
+    totalSongs: 3,
+  },
+  {
+    id: 2,
+    title: "Liked Music",
+    coverLink: "https://i.ytimg.com/vi/ZT7GO63dDcc/hqdefault.jpg",
+    totalSongs: 12,
+  },
+  {
+    id: 3,
+    title: "OSTs",
+    coverLink: "https://i.ytimg.com/vi/-Amql5hXG8g/hqdefault.jpg",
+    totalSongs: 7,
+  },
+  {
+    id: 4,
+    title: "Trap Remixes",
+    coverLink: "https://i.ytimg.com/vi/-T8r3zGfQSo/hqdefault.jpg",
+    totalSongs: 5,
+  },
+  {
+    id: 5,
+    title: "Lofi",
+    coverLink: "https://i.ytimg.com/vi/4K_FXp8YAMA/hqdefault.jpg",
+    totalSongs: 1,
+  },
+];
+
+const subscriptionsData = [
+  {
+    channelId: 1,
+    channelName: "Musicality",
+    channelCoverLink:
+      "https://yt3.ggpht.com/ytc/AMLnZu9xzRSO4VK1iryYU7Q0QBJWngmv3x6cqw2WAdiR4g=s480-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    channelId: 2,
+    channelName: "Trap Music Now",
+    channelCoverLink:
+      "https://yt3.ggpht.com/JXYD1M-TEcycFVqJN7WbR_gwCwlD9BYhcSQ7Bax9pWw6mFKJcBDDFh2EFLguxWDz2qjJAdOiOw=s480-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    channelId: 3,
+    channelName: "Monster Vibes",
+    channelCoverLink:
+      "https://yt3.ggpht.com/E4rcXA1_LlqJRgBhG6jMElezmy8VcXCJvnGuUSMPZcnZEIx2R84Uo9UcUie_gh5ZF_56JoxnjA=s480-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    channelId: 4,
+    channelName: "Shinzu Music",
+    channelCoverLink:
+      "https://yt3.ggpht.com/su845d81gAvBm-WLD0L-CsYSOvdwbXZWs9yKze1TUVRa_A0P1ejiWmoR5YLEF4EFyXqRu2IHaQ=s480-c-k-c0x00ffffff-no-rj-mo",
+  },
+];
+
+const historyData = [
+  {
+    id: "g3jCAyPai2Y",
+    title: "Yakuza OST - Baka Mitai (ばかみたい) Kiryu full version",
+    channelName: "Senshi Ongaku",
+    medium: "https://i.ytimg.com/vi/g3jCAyPai2Y/mqdefault.jpg",
+    views: "4.46M",
+    description:
+      "Yakuza (Ryu ga Gotoku) 0, 5 and Kiwami karaoke, originally sang by Kiryu. Cover version by Senshi Ongaku. Composition © Sega / Ryu ga Gotoku Studio Audio © Senshi Ongaku",
+  },
+  {
+    id: "6u5GK11Yt7Q",
+    title: "Tokyo Revengers Opening (Full) -Cry Baby- Lyrics",
+    channelName: "ZEN",
+    medium: "https://i.ytimg.com/vi/6u5GK11Yt7Q/mqdefault.jpg",
+    views: "3.78M",
+    description:
+      "Anime : Tokyo Revengers Song : Cry Baby by Official HIGE DANdism",
+  },
+  {
+    id: "qal34e9v_pk",
+    title: `Suzume no Tojimari - Theme Song "Suzume" (Official Version)`,
+    channelName: "AniMelody – Anime Music",
+    medium: "https://i.ytimg.com/vi/qal34e9v_pk/mqdefault.jpg",
+    views: "798K",
+    description: `Suzume no Tojimari OST / Title Track "Suzume" by RADWIMPS ft. toaka Anime Film "Suzume's Door-Locking" OST / Main Theme (Official ver.)
+RADWIMPS feat. toaka - Suzume`,
+  },
+  {
+    id: "YaQbkhdYL_s",
+    title: "Naruto Shippuden - Departure to the Front Lines (LSB Remix)",
+    channelName: "Shinzu Music",
+    medium: "https://i.ytimg.com/vi/YaQbkhdYL_s/mqdefault.jpg",
+    views: "38K",
+    description: `Naruto Shippuden - Departure to the Front Lines (LSB Remix)
+This is a reupload. Last one got blocked in all countries. I hope it'll stay up this time! 😅`,
+  },
+  {
+    id: "BpcOxoqleAU",
+    title: "Ultra Instinct OST - EPIC VERSION [身勝手の極意]",
+    channelName: "Dragon Ball Epic",
+    medium: "https://i.ytimg.com/vi/BpcOxoqleAU/mqdefault.jpg",
+    views: "15M",
+    description: `Welcome to another EPIC OST MIX video; it's time to get Ultra Instinct again & surpass every limit, in this blood-pumping EPIC VERSION [身勝手の極意]. Feat. Aviand & Unkos Channel.`,
+  },
+];
+
+const suggestionsData = [
+  {
+    id: "5CCO5JzFtCc",
+    title: "DRAGON BALL SUPER Ultra Instinct (OFFICIAL TRAP REMIX)",
+    channelName: "TRAP MUSIC NOW",
+    views: "32M",
+    imageUrl: "https://i.ytimg.com/vi/5CCO5JzFtCc/default.jpg",
+    mediumImage: "https://i.ytimg.com/vi/5CCO5JzFtCc/mqdefault.jpg",
+  },
+  {
+    id: "9Zuh0EIfgTQ",
+    title: "Naruto - Raising Fighting Spirit (Trap Remix)",
+    channelName: "Remix Maniacs",
+    views: "80K",
+    imageUrl: "https://i.ytimg.com/vi/9Zuh0EIfgTQ/default.jpg",
+    mediumImage: "https://i.ytimg.com/vi/9Zuh0EIfgTQ/mqdefault.jpg",
+  },
+  {
+    id: "q6894MxR2XA",
+    title: "MHA OST — United States of Smash Extended Theme",
+    channelName: "GMendeM",
+    views: "194K",
+    imageUrl: "https://i.ytimg.com/vi/q6894MxR2XA/default.jpg",
+    mediumImage: "https://i.ytimg.com/vi/q6894MxR2XA/mqdefault.jpg",
+  },
+  {
+    id: "bfW6dzCFy2A",
+    title: "One Piece OST: Overtaken | EPIC VERSION (Drums of Liberation)",
+    channelName: "Samuel Kim Music",
+    views: "3.8M",
+    imageUrl: "https://i.ytimg.com/vi/bfW6dzCFy2A/default.jpg",
+    mediumImage: "https://i.ytimg.com/vi/bfW6dzCFy2A/mqdefault.jpg",
+  },
+  {
+    id: "_AwpLN7IE3w",
+    title: "Shiro Sagisu - Treachery [Dubstep] (Rayden Remix) [Remake]",
+    channelName: "Rayden",
+    views: "1.4M",
+    imageUrl: "https://i.ytimg.com/vi/_AwpLN7IE3w/default.jpg",
+    mediumImage: "https://i.ytimg.com/vi/_AwpLN7IE3w/mqdefault.jpg",
+  },
+  {
+    id: "Ysr2uluyjQg",
+    title: "The Raising Fighting Spirit (Ponti Trap Remix)",
+    channelName: "Ponti",
+    views: "143K",
+    imageUrl: "https://i.ytimg.com/vi/Ysr2uluyjQg/default.jpg",
+    mediumImage: "https://i.ytimg.com/vi/Ysr2uluyjQg/mqdefault.jpg",
+  },
+];
+
+const singlePlayListData = [
+  {
+    id: "OEZdKA9nffo",
+    title: "[AMV] Naruto Shippuden - Samidare (ksolis Trap Remix)",
+    channelName: "ksolis",
+    channelId: "UCxIf84dVSW2lAiBmCLzQe1Q",
+    duration: "2 min 52 sec",
+    views: "38346082",
+    likes: "728869",
+    thumbnails: {
+      default: "https://i.ytimg.com/vi/OEZdKA9nffo/default.jpg",
+      medium: "https://i.ytimg.com/vi/OEZdKA9nffo/mqdefault.jpg",
+      high: "https://i.ytimg.com/vi/OEZdKA9nffo/hqdefault.jpg",
+      standard: "https://i.ytimg.com/vi/OEZdKA9nffo/sddefault.jpg",
+      max: "https://i.ytimg.com/vi/OEZdKA9nffo/maxresdefault.jpg",
+    },
+    description:
+      "FREE DOWNLOAD: https://www.toneden.io/ksoliss/post/naruto-shippuden-samidare-ksolis-trap-remix-\n\nSupport me: https://www.paypal.me/ksoliss\nSoundcloud: https://soundcloud.com/k-solis\nPartner with BBTV: http://bbtv.go2cloud.org/SH13Z\nksolis MERCHANDISE: http://shop.spreadshirt.com/ksolis/\n\n\n\n\n[AMV] Naruto Shippuden OST- Samidare (Early Summer Rain) [ksolis Trap Remix]\nYamagsumi",
+    comments: [
+      {
+        commentId: "UggEvAFfNezpwngCoAEC",
+        comment:
+          "This is amazing \nI know it probably took you long to make it \nSo good job man",
+        commenter: "Souryuu Asuka Langley",
+      },
+      {
+        commentId: "UgxIA0MWKO3FnqCzfNF4AaABAg",
+        comment:
+          "To the future generations, please dont let this legendary series die!",
+        commenter: "Todoroki Shouto",
+      },
+      {
+        commentId: "Ugyvzbo9EJ_5Pg-3LPZ4AaABAg",
+        comment:
+          '"Appreciate everything around you before they turn into memories"\n                                            ~Pervy sage',
+        commenter: "C.C.",
+      },
+      {
+        commentId: "UgzKUkJzHN8DATFbaLN4AaABAg",
+        comment: "No One Should Ever Let This Masterpiece Ever Die😔",
+        commenter: "Son Gokuu",
+      },
+      {
+        commentId: "UgwDZsroGiorOEZHs4p4AaABAg",
+        comment: "This isnt just a music, its emotion and memory for me.",
+        commenter: "Midoriya Izuku",
+      },
+    ],
+    animeId: "anime_naruto",
+    anime: "Naruto",
+    channelLink: "https://www.youtube.com/channel/UCxIf84dVSW2lAiBmCLzQe1Q",
+    channelImage: {
+      default:
+        "https://yt3.ggpht.com/ytc/AMLnZu-GrtUmhAwBZerCbfm9CyZkdSVsDErShGrxWx_S=s88-c-k-c0x00ffffff-no-rj-mo",
+      medium:
+        "https://yt3.ggpht.com/ytc/AMLnZu-GrtUmhAwBZerCbfm9CyZkdSVsDErShGrxWx_S=s480-c-k-c0x00ffffff-no-rj-mo",
+    },
+    likeStr: "729K",
+    viewStr: "38M",
+    hash: "UEIh1}F?00Mg4rD*~Ukp00$*^koxf{-:4:ra",
+  },
+  {
+    id: "6u5GK11Yt7Q",
+    title: "Tokyo Revengers Opening (Full) -Cry Baby- Lyrics",
+    channelName: "ZEN",
+    channelId: "UChMs3wfRBLDhbIGTZ0fKkRw",
+    duration: "4 min 38 sec",
+    views: "38154226",
+    likes: "502163",
+    thumbnails: {
+      default: "https://i.ytimg.com/vi/6u5GK11Yt7Q/default.jpg",
+      medium: "https://i.ytimg.com/vi/6u5GK11Yt7Q/mqdefault.jpg",
+      high: "https://i.ytimg.com/vi/6u5GK11Yt7Q/hqdefault.jpg",
+      standard: "https://i.ytimg.com/vi/6u5GK11Yt7Q/sddefault.jpg",
+      max: "https://i.ytimg.com/vi/6u5GK11Yt7Q/maxresdefault.jpg",
+    },
+    description:
+      "Anime : Tokyo Revengers\nSong : Cry Baby by Official HIGE DANdism\n\n[Credit]\nLyrics : \nDreamsland Lyrics\n@Save me\naisuru nihongo\n\nArtwork/Thumbnail : https://www.pixiv.net/en/artworks/89380420\n\n《Copyright: Be aware this channel is only for promotion purpose. All music belongs to the original creators.》",
+    comments: [
+      {
+        commentId: "Ugw7h8OmR3IHpBex-BZ4AaABAg",
+        comment: "'' cry baby '' is voted as the best opening of spring 2021",
+        commenter: "Franky",
+      },
+      {
+        commentId: "UgwROCokl_a8tgJGpcN4AaABAg",
+        comment:
+          "It already sounds fucking nostalgic. Imagine hearing this after 10 years. The tears 🥲\nEDIT: Thanks for the likes! ❤️",
+        commenter: "Greed",
+      },
+      {
+        commentId: "UgyZDpVRiWULZlrQ0TJ4AaABAg",
+        comment:
+          "At first I thought this song was kind of normal but after reading the manga I just understand this song more. It's so emotional I could cry. Takemichi's efforts to save everyone, the sadness of Mikey, all the characters who deserved better... I attached myself to them so much in such a short time. Please if you haven't read the manga, go. It's a masterpiece",
+        commenter: "Stadtfeld Kallen",
+      },
+      {
+        commentId: "Ugw4kts0g6pU5-zJsoB4AaABAg",
+        comment:
+          '"Oi, Manjiro!!! Just say it once, just say “please help me”, damn it!!! And I’ll definitely come to save you!"\n             - Takemitchi to Mikey',
+        commenter: "Harima Kenji",
+      },
+      {
+        commentId: "UgzDzm-836JV_vgzkcF4AaABAg",
+        comment:
+          "ЭТО ЛУЧШИЙ ОППЕНИНГ КОТОРЫЙ Я СЛЫШАЛА😭😭😭, И Аот это прелесть",
+        commenter: "Wong Hau Pepelu Tivrusky IV Edward",
+      },
+    ],
+    animeId: "anime_demon_slayer",
+    anime: "Demon Slayer",
+    channelLink: "https://www.youtube.com/channel/UChMs3wfRBLDhbIGTZ0fKkRw",
+    channelImage: {
+      default:
+        "https://yt3.ggpht.com/lmGNqeYzBtmplvrP_6wqBFtfvPNhQfNds6XKj3QrjfcJxczRj3YIHkWS-TRfY0cfvshQ2heTlg=s88-c-k-c0x00ffffff-no-rj",
+      medium:
+        "https://yt3.ggpht.com/lmGNqeYzBtmplvrP_6wqBFtfvPNhQfNds6XKj3QrjfcJxczRj3YIHkWS-TRfY0cfvshQ2heTlg=s480-c-k-c0x00ffffff-no-rj",
+    },
+    likeStr: "502K",
+    viewStr: "38M",
+    hash: "UALg;JxZ?b%hL}s:NI?v00ogM{RkPXogM{4n",
+  },
+  {
+    id: "5CCO5JzFtCc",
+    title: "DRAGON BALL SUPER Ultra Instinct (OFFICIAL TRAP REMIX)",
+    channelName: "TRAP MUSIC NOW",
+    channelId: "UCi2bIyFtz-JdI-ou8kaqsqg",
+    duration: "3 min 17 sec",
+    views: "32868276",
+    likes: "519930",
+    thumbnails: {
+      default: "https://i.ytimg.com/vi/5CCO5JzFtCc/default.jpg",
+      medium: "https://i.ytimg.com/vi/5CCO5JzFtCc/mqdefault.jpg",
+      high: "https://i.ytimg.com/vi/5CCO5JzFtCc/hqdefault.jpg",
+      standard: "https://i.ytimg.com/vi/5CCO5JzFtCc/sddefault.jpg",
+      max: "https://i.ytimg.com/vi/5CCO5JzFtCc/maxresdefault.jpg",
+    },
+    description:
+      "🤟 DRAGON BALL SUPER Ultra Instinct (OFFICIAL TRAP REMIX)\n👍 SUBSCRIBE: http://smarturl.it/TN\n👕 TMN MERCH: http://smarturl.it/TMNShop\n✨ SPOTIFY: http://smarturl.it/TMNSPOTIFY\n\n🎵 TrackGonEat\nhttp://www.beatdemons.com\nhttps://twitter.com/TrackGonEat\nhttps://soundcloud.com/trackgoneat\nhttps://instagram.com/TrackGonEat\n\n⚡ TRAP MUSIC NOW\nSubscribe: http://smarturl.it/TN\nOfficial: http://smarturl.it/TMNOFFICIAL\nTMN Merch: http://smarturl.it/TMNShop\nSpotify: http://smarturl.it/TMNSPOTIFY\nTwitter: http://smarturl.it/TMNTW\nInstagram: http://smarturl.it/TMNIG\nSoundcloud: http://smarturl.it/TMNSC\nFacebook: http://smarturl.it/TMNFBK\n\n🎮 KILLJOY\nSubscribe: http://smarturl.it/GVYT\nTwitch: http://smarturl.it/GVLive\nTwitter: http://smarturl.it/GVTW\nFacebook: http://smarturl.it/GVFBK\nInstagram: http://smarturl.it/GVIG\n\n⚠️ Wallpaper published under Creative Commons Zero\n\n🚫 The music in the video is not free to use, if you'd like to use the music in this video, please contact the artist or rights-holder. For more information regarding promotion or label releases, email us through our contact page.\n\n#trap #trapmusic #trapremix #trapremixes #trapmusicnow #bassboost",
+    comments: [
+      {
+        commentId: "UgxfkAURGbthLWuZ0Bp4AaABAg",
+        comment: "KAMEHAHAHAHAAAAAAAAAAAAAAAA",
+        commenter: "Lamperouge Lelouch",
+      },
+      {
+        commentId: "UgxE0aEsXk46lensuGx4AaABAg",
+        comment:
+          "If you can like this without thinking then you have ultra instinct",
+        commenter: "Levi",
+      },
+      {
+        commentId: "UgyyclrP_c6aceD-hQl4AaABAg",
+        comment:
+          "Ultra instinct theme is one of the best theme ever created in anime history.",
+        commenter: "Monkey D. Luffy",
+      },
+      {
+        commentId: "UgxLEfZB-P4G5bnd6jx4AaABAg",
+        comment: "Beat drops harder than my nightmares",
+        commenter: "Lawliet L",
+      },
+      {
+        commentId: "Ugwq_XAxQvv-MDVP-8x4AaABAg",
+        comment: "The intensity is in the air, this truly is, ULTRA INSTINCT!",
+        commenter: "Roronoa Zoro",
+      },
+    ],
+    animeId: "anime_dragon_ball",
+    anime: "Dragon Ball",
+    channelLink: "https://www.youtube.com/channel/UCi2bIyFtz-JdI-ou8kaqsqg",
+    channelImage: {
+      default:
+        "https://yt3.ggpht.com/JXYD1M-TEcycFVqJN7WbR_gwCwlD9BYhcSQ7Bax9pWw6mFKJcBDDFh2EFLguxWDz2qjJAdOiOw=s88-c-k-c0x00ffffff-no-rj",
+      medium:
+        "https://yt3.ggpht.com/JXYD1M-TEcycFVqJN7WbR_gwCwlD9BYhcSQ7Bax9pWw6mFKJcBDDFh2EFLguxWDz2qjJAdOiOw=s480-c-k-c0x00ffffff-no-rj",
+    },
+    likeStr: "520K",
+    viewStr: "33M",
+    hash: "U9C?pMju#JbH}$fQ%3j[00a{bmja0Oj[5kay",
+  },
+  {
+    id: "rTJjtSP-ORc",
+    title: "The Promised Neverland OST - Isabella’s Lullaby",
+    channelName: "Lindea",
+    channelId: "UCKuKvx1YspXlZ9UETNyk5rw",
+    duration: "5 min 24 sec",
+    views: "28858627",
+    likes: "621494",
+    thumbnails: {
+      default: "https://i.ytimg.com/vi/rTJjtSP-ORc/default.jpg",
+      medium: "https://i.ytimg.com/vi/rTJjtSP-ORc/mqdefault.jpg",
+      high: "https://i.ytimg.com/vi/rTJjtSP-ORc/hqdefault.jpg",
+      standard: "https://i.ytimg.com/vi/rTJjtSP-ORc/sddefault.jpg",
+      max: "https://i.ytimg.com/vi/rTJjtSP-ORc/maxresdefault.jpg",
+    },
+    description:
+      "🎶 Listen Our Peaceful Anime OST Collection on Spotify : https://open.spotify.com/playlist/1Zlw4zdWLNEB50wxXER36j?si=ba98f092b7974290\n\nIsabella’s Lullaby (Extended)\nComposed by Takahiro Obata\n\nWallpaper: https://static.zerochan.net/Yakusoku.no.Neverland.full.2265785.jpg\n\nYakusoku no neverland OST Isabella's theme",
+    comments: [
+      {
+        commentId: "UgxYzpkW0yF6XWQKkR94AaABAg",
+        comment:
+          "This is one of the many cases where anime ost's are quite literally orchestral masterpieces",
+        commenter: "Kakyouin Noriaki",
+      },
+      {
+        commentId: "Ugx0OLgLgK2LTqqv0Lt4AaABAg",
+        comment:
+          "Imagine raising children with so much love, watching them smile and play, knowing that you're going to have to lead them to their death one day ༎ຶ‿༎ຶ",
+        commenter: "Amane Misa",
+      },
+      {
+        commentId: "UgxKW4xqiOvAQgiMe1V4AaABAg",
+        comment:
+          "If this shit doesn’t play at my funeral and the priest doesn’t say “She’s off to The Promised Neverland” then I’m not dying",
+        commenter: "Shanks",
+      },
+      {
+        commentId: "UgxHUZGHT1JpcevCS0N4AaABAg",
+        comment:
+          "This song hits different when you actually know the meaning behind it. If you listen closely, one of the sentences where she is humming actually sounds like  \"Find your own strength please, my dear run away.\" So Isabella probably knew about their plan of escaping. And did her best to act like she didn't know. Even at the end of season 1 she let's  them escapce.",
+        commenter: "Nakano Yotsuba",
+      },
+      {
+        commentId: "Ugwa3DsJvMD3jRZQttN4AaABAg",
+        comment:
+          '"Ray, how do you know that song?"\nRay: *Smiles* "Mom, why did you have me?"\nIsabella: "To live longer than the rest"\n\nTHAT SCENE HIT HARD\n\nEdit: Mom I\'m famous\nEdit 2: Tysm for the likes',
+        commenter: "Satou Tatsuhiro",
+      },
+    ],
+    animeId: "anime_demon_slayer",
+    anime: "Demon Slayer",
+    channelLink: "https://www.youtube.com/channel/UCKuKvx1YspXlZ9UETNyk5rw",
+    channelImage: {
+      default:
+        "https://yt3.ggpht.com/ytc/AMLnZu-VyDBk-cgJ-4CoyywaO4OsmVlHCRoiBuSKAd09=s88-c-k-c0x00ffffff-no-rj",
+      medium:
+        "https://yt3.ggpht.com/ytc/AMLnZu-VyDBk-cgJ-4CoyywaO4OsmVlHCRoiBuSKAd09=s480-c-k-c0x00ffffff-no-rj",
+    },
+    likeStr: "621K",
+    viewStr: "29M",
+    hash: "UDEDL+xt00NcCmso;0S400M|_1xZ*xNHFzsm",
+  },
+];
+export {
+  videosData,
+  animeData,
+  // playlistsData,
+  subscriptionsData,
+  historyData,
+  suggestionsData,
+  singlePlayListData,
+};

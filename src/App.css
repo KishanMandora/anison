@@ -1,3 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.grid-container {
+  @apply mx-auto mb-6 grid w-9/10 gap-6  py-2 pb-8 xs:grid-cols-2 semi-lg:grid-cols-3 3xl:grid-cols-5;
+}
+
+.delete {
+  @apply rounded-md bg-error p-2 transition-transform hover:scale-105 active:scale-90;
+}
+
+.bottom {
+  @apply absolute right-0 bottom-1;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.input {
+  @apply w-full border-2 border-x-0 border-t-0 border-neutral-600 bg-secondary-extra-light text-sm font-light text-stone-50 outline-none focus:border-neutral-200;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
