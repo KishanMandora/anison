@@ -615,6 +615,14 @@ app.get("/", (req, res) => {
   res.send("Hello Earth!");
 });
 
+app.get("/watch/:id", (req, res) => {
+  const { id } = req.params;
+  console.log(id, "is id");
+
+  const video = data.filter((vid) => vid.id === id);
+  res.json({ data: video });
+});
+
 app.get("/explore", (req, res) => {
   const videosData = data.map(({ id, title, duration, hash, thumbnails }) => {
     return { id, title, duration, hash, thumbnails };

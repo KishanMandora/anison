@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import {
   BottomNavbar,
   Dropdown,
@@ -11,15 +10,6 @@ import { exploreData as data } from "../../finalData";
 console.log(data, "from new data");
 
 function Explore({ setCurrentList }) {
-  const fetchData = async () => {
-    const resp = await fetch("http://localhost:3000/explore");
-    console.log(resp, " is resp");
-  };
-
-  useEffect(() => {
-    fetchData();
-  });
-
   return (
     <div className="min-h-screen">
       <SearchNavbar />
