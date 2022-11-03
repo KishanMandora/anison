@@ -9,7 +9,7 @@ explore.get("/", (req, res) => {
     }
   );
 
-  res.json({ data: videosData, success: true });
+  res.json(videosData);
 });
 
 module.exports = explore;
