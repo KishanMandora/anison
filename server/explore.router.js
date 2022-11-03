@@ -1,8 +1,8 @@
 const express = require("express");
 const exploreData = require("./data.js");
-const exploreRouter = express.Router();
+const explore = express.Router();
 
-exploreRouter.get("/", (req, res) => {
+explore.get("/", (req, res) => {
   const videosData = exploreData.map(
     ({ id, title, duration, hash, thumbnails }) => {
       return { id, title, duration, hash, thumbnails };
@@ -12,4 +12,4 @@ exploreRouter.get("/", (req, res) => {
   res.json({ data: videosData, success: true });
 });
 
-module.exports = exploreRouter;
+module.exports = explore;
