@@ -6,6 +6,10 @@ app.get("/", (req, res) => {
   res.send("Hello Earth!");
 });
 
-app.listen(port, () => {
+app.get("/explore", (req, res) => {
+  res.send("Hello from explore page");
+});
+
+app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening on port ${port}`);
 });
