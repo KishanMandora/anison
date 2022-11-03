@@ -1,5 +1,7 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
+app.use(bodyParser.json());
 const port = 3000;
 
 const data = [
@@ -611,13 +613,24 @@ const data = [
   },
 ];
 
+const history = [];
+
 app.get("/", (req, res) => {
   res.send("Hello Earth!");
 });
 
+app.post("/history", (req, res) => {
+  const historyVideo = req.body;
+  history.push(historyVideo);
+  res.json({ success: true, historyVideo });
+});
+
+app.get("/history", (req, res) => {
+  res.json({ data: history });
+});
+
 app.get("/watch/:id", (req, res) => {
   const { id } = req.params;
-  console.log(id, "is id");
 
   const video = data.find((vid) => vid.id === id);
 
