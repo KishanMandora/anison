@@ -4713,4 +4713,4 @@ const exploreData = [
   },
 ];
 
-export { exploreData };
+module.exports = exploreData;
