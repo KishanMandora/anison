@@ -616,16 +616,11 @@ app.get("/", (req, res) => {
 });
 
 app.get("/explore", (req, res) => {
-  const videos = data
-    .map((vid) => {
-      return `
-    <h2>  ${vid.title} </h2>
-    <img src=${vid.thumbnails.medium} alt=${vid.title} />
-    `;
-    })
-    .join(" ");
+  const videosData = data.map(({ id, title, duration, hash, thumbnails }) => {
+    return { id, title, duration, hash, thumbnails };
+  });
 
-  res.send(videos);
+  res.json({ data: videosData });
 });
 
 app.listen(process.env.PORT || port, () => {
