@@ -619,8 +619,13 @@ app.get("/watch/:id", (req, res) => {
   const { id } = req.params;
   console.log(id, "is id");
 
-  const video = data.filter((vid) => vid.id === id);
-  res.json({ data: video });
+  const video = data.find((vid) => vid.id === id);
+
+  if (video) {
+    res.json({ data: video, success: true });
+  } else {
+    res.status(404).json({ message: "Video not found", success: false });
+  }
 });
 
 app.get("/explore", (req, res) => {
